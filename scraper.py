@@ -19,7 +19,7 @@ class scraper:
         self.actor_max = 300
         self.threads_num = 12
         self.urls = queue.Queue()
-        self.urls.put('https://en.wikipedia.org/wiki/Avatar_(2009_film)')
+        self.urls.put('https://en.wikipedia.org/wiki/List_of_actors_with_Academy_Award_nominations')
         self.threadLock = threading.Lock()
         self.g = graph.graph()
 
@@ -54,14 +54,19 @@ class scraper:
             stops.append(s)
         print('Start Scraping')
         logging.info('Start Scraping')
-        time.sleep(100)
+        time.sleep(600)
         print('Times up')
         for s in stops:
-            s.set()
+             s.set()
+        # for t in threads:
+        #     t.join()
         logging.info('End Scraping')
+        print('End Scraping')
         return
 
     def complete_all(self):
+        self.g.complet_gross()
+        self.g.build_edge()
         return
 
     def parse(self, name, stop_event):
@@ -71,6 +76,9 @@ class scraper:
             response = http.request('GET', url)
             soup = BeautifulSoup(response.data, "html.parser")
             navigation = soup.find(id='mw-normal-catlinks')
+            if navigation is None:
+                self.urls.task_done()
+                continue
             cates = navigation.find('ul').text
             if 'television' in cates:
                 pass
@@ -86,9 +94,11 @@ class scraper:
             else:
                 pass # not actor or movie
             self.urls.task_done() # mark task done
-            # with self.threadLock:
-            #     if self.actor_count >= self.actor_max and self.movie_count >= self.movie_max:
-            #         break
+            with self.threadLock:
+                if self.actor_count >= self.actor_max and self.movie_count >= self.movie_max:
+                    break
+                if self.urls.empty():
+                    break
             time.sleep(random.random()) # sleep for (0, 1) second
         print(name + ' Done')
         return
@@ -166,7 +176,6 @@ class scraper:
                 age = re.findall('\d+', age)[0]
                 this.birth = str(datetime.today() - relativedelta(year=int(age)))
             else:
-                #this.birth = datetime.strptime(birth, '%Y-%m-%d').date()
                 this.birth = birth
         except Exception:
             this.birth = None
@@ -176,13 +185,13 @@ class scraper:
             self.actor_count += 1
 
 
-        links = soup.find_all('a')
-        for link in links:
-            ref = link.get("href")
-            if ref is None:
-                continue
-            if ref.startswith('/wiki/') and 'File' not in ref and 'Award' not in ref:
-                refid = self.get_wiki_id(ref)
-                if refid != id:
-                    self.urls.put("https://en.wikipedia.org" + ref)
+        # links = soup.find_all('a')
+        # for link in links:
+        #     ref = link.get("href")
+        #     if ref is None:
+        #         continue
+        #     if ref.startswith('/wiki/') and 'File' not in ref and 'Award' not in ref:
+        #         refid = self.get_wiki_id(ref)
+        #         if refid != id:
+        #             self.urls.put("https://en.wikipedia.org" + ref)
         return

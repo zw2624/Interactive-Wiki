@@ -42,8 +42,29 @@ class graph:
             self.actor_num += 1
         return
 
-    def cal_weight(self, movie, actor):
-        return actor.total_gross
+    def cal_weight(self, movie, actor_id):
+        if actor_id in self.all_actors:
+            actor = self.all_actors[actor_id]
+            if actor is not None:
+                return actor.total_gross
+        else:
+            return -1
+
+    def complet_gross(self):
+        for movie_id in self.all_movies:
+            movie = self.all_movies[movie_id]
+            for actor_id in movie.actors_id:
+                if actor_id in self.all_actors:
+                    self.all_actors[actor_id].add_movie(movie)
+
+    def build_edge(self):
+        for movie_id in self.all_movies:
+            movie = self.all_movies[movie_id]
+            for actor_id in movie.actors_id:
+                w = self.cal_weight(movie, actor_id)
+                self.add_edge(movie_id, actor_id, w)
+        return
+
 
     def write_to_json(self, path):
         '''

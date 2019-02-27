@@ -8,7 +8,7 @@ from datetime import datetime
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 test_spider = scraper.scraper()
-test_spider.manual_add("https://en.wikipedia.org/wiki/Tom_Hiddleston")
+#test_spider.manual_add("https://en.wikipedia.org/wiki/Tom_Hiddleston")
 test_spider.start()
 test_spider.complete_all()
 test_spider.g.write_to_json('./')
