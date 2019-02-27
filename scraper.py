@@ -3,11 +3,10 @@ import urllib3
 import queue
 import threading
 import time
-import random
 import logging
 import re
-import models
-import graph
+import random
+from Model import models, graph
 from datetime import datetime
 from dateutil.relativedelta import relativedelta
 
@@ -20,6 +19,7 @@ class scraper:
         self.actor_max = 300
         self.threads_num = 12
         self.urls = queue.Queue()
+        self.urls.put('https://en.wikipedia.org/wiki/Avatar_(2009_film)')
         self.threadLock = threading.Lock()
         self.g = graph.graph()
 
@@ -68,7 +68,6 @@ class scraper:
         http = urllib3.PoolManager()
         while not stop_event.is_set():
             url = self.urls.get()
-            #print(name + " is processing: " + url)
             response = http.request('GET', url)
             soup = BeautifulSoup(response.data, "html.parser")
             navigation = soup.find(id='mw-normal-catlinks')
@@ -90,7 +89,7 @@ class scraper:
             # with self.threadLock:
             #     if self.actor_count >= self.actor_max and self.movie_count >= self.movie_max:
             #         break
-            #time.sleep(random.random()) # sleep for (0, 1) second
+            time.sleep(random.random()) # sleep for (0, 1) second
         print(name + ' Done')
         return
 
@@ -130,9 +129,15 @@ class scraper:
                         try:
                             bo1 = re.findall('\$\d+\.*\d+\s\w+', tr.td.text)
                             if len(bo1) == 0:
-                                bo2 = re.findall('\$.+\d+', tr.td.text)
+                                bo1 = re.findall('\$.+\d+', tr.td.text)
+                            bo1 = bo1[0].replace(',', '')
+                            gross = bo1.strip('$')
+                            if gross.split()[-1] == 'million':
+                                this.box_office = float(gross.split()[0]) * 10e6
+                            elif gross.split()[-1] == 'billion':
+                                this.box_office = float(gross.split()[0]) * 10e9
                             else:
-                                this.box_office = bo1[0]
+                                this.box_office = float(gross.split()[0])
                         except Exception:
                             this.box_office = None
                 else:

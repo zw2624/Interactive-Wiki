@@ -2,7 +2,7 @@
 class films:
 
     def __init__(self):
-        self.id = -1
+        self.id = "no id"
         self.name = None
         self.release = None
         self.box_office = None
@@ -19,7 +19,7 @@ class films:
 class actors:
 
     def __init__(self):
-        self.id = -1
+        self.id = "no id"
         self.name = None
         self.birth = None
         self.movie_ids = []
@@ -28,9 +28,7 @@ class actors:
 
     def add_movie(self, movie):
         self.movie_num += 1
-        self.total_gross += movie.gross
+        if movie.box_office is not None:
+            self.total_gross += movie.box_office
         self.movie_ids.append(movie.id)
-
-    def print(self):
-        print("{}, born in {},  acted in: {}".format(self.name, self.birth, self.movie_ids))
 
