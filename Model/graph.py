@@ -180,9 +180,12 @@ class graph:
         for movie_id in self.all_movies:
             movie = self.all_movies[movie_id]
             if movie.release is not None:
-                dt = datetime.strptime(movie.release, '%Y-%m-%d')
-                if dt.year == year:
-                    ret.append(movie_id)
+                try:
+                    dt = datetime.strptime(str(movie.release), '%Y-%m-%d')
+                    if dt.year == year:
+                        ret.append(movie_id)
+                except Exception:
+                    pass
         return ret
 
     def get_actor_by_movies(self, movie_id):

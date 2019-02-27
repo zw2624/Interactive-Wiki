@@ -15,7 +15,7 @@ class scraper:
     def __init__(self):
         self.movie_count = 0
         self.actor_count = 0
-        self.movie_max = 125
+        self.movie_max = 250
         self.actor_max = 300
         self.threads_num = 12
         self.urls = queue.Queue()
@@ -37,7 +37,7 @@ class scraper:
         '''
         threads = []
         stops = []
-
+        logging.basicConfig(filename='history_info.log', level=logging.INFO)
         http = urllib3.PoolManager()
         start = self.urls.get()
         response = http.request('GET', start)
@@ -86,6 +86,7 @@ class scraper:
         http = urllib3.PoolManager()
         while not stop_event.is_set():
             url = self.urls.get()
+            logging.debug('processing ' + url)
             response = http.request('GET', url)
             soup = BeautifulSoup(response.data, "html.parser")
             navigation = soup.find(id='mw-normal-catlinks')
@@ -109,8 +110,10 @@ class scraper:
             self.urls.task_done() # mark task done
             with self.threadLock:
                 if self.actor_count >= self.actor_max and self.movie_count >= self.movie_max:
+                    logging.info('reached all max')
                     break
                 if self.urls.empty():
+                    logging.info('break because the pool is empty')
                     break
             time.sleep(random.random()) # sleep for (0, 1) second
         print(name + ' Done')
@@ -129,8 +132,11 @@ class scraper:
         with self.threadLock:
             if id in self.g.all_movies:
                 return
+            if self.movie_count >= self.movie_max:
+                return
         info_box = soup.find('table', {"class": "infobox vevent"})
         if info_box is None:
+            logging.warning('Cannot find the information box of ' + id)
             return
         this = models.films()
         this.id = id
@@ -168,6 +174,7 @@ class scraper:
                             else:
                                 this.box_office = float(gross.split()[0])
                         except Exception:
+                            logging.warning('Cannot find the box office of ' + id)
                             this.box_office = None
                 else:
                     pass
@@ -187,6 +194,7 @@ class scraper:
 
         info_box = soup.find('table', {"class": "infobox biography vcard"})
         if info_box is None:
+            logging.warning('Cannot find the information box of ' + name)
             return
         this = models.actors()
         this.id = id
@@ -200,6 +208,7 @@ class scraper:
             else:
                 this.birth = birth
         except Exception:
+            logging.warning('Cannot parse the birth of ' + name)
             this.birth = None
 
         with self.threadLock:

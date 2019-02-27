@@ -1,0 +1,786 @@
+WARNING:root:Cannot find the box office of The_Story_of_Adele_H.
+WARNING:root:Cannot find the box office of Mildred_Pierce_(film)
+WARNING:root:Cannot find the box office of Disraeli_(1929_film)
+WARNING:root:Cannot find the information box of Peggy Ashcroft
+WARNING:root:Cannot find the box office of My_Man_Godfrey
+WARNING:root:Cannot find the box office of A_Free_Soul
+WARNING:root:Cannot find the box office of Foreign_Correspondent_(film)
+WARNING:root:Cannot find the information box of Sweet_Bird_of_Youth
+WARNING:root:Cannot find the information box of The Artist (film)
+WARNING:root:Cannot find the box office of Starting_Over_(1979_film)
+WARNING:root:Cannot find the box office of Gaslight_(1944_film)
+WARNING:root:Cannot find the box office of A_Better_Life
+WARNING:root:Cannot find the information box of The Exorcist (film)
+WARNING:root:Cannot find the box office of The_Blue_Veil_(1951_film)
+WARNING:root:Cannot find the box office of Mudbound_(film)
+WARNING:root:Cannot find the box office of The_African_Queen_(film)
+WARNING:root:Cannot find the box office of The_Gorgeous_Hussy
+WARNING:root:Cannot find the information box of What Ever Happened to Baby Jane? (1962 film)
+WARNING:root:Cannot find the box office of A_Soldier%27s_Story
+WARNING:root:Cannot find the box office of Yankee_Doodle_Dandy
+WARNING:root:Cannot find the box office of The_Godfather
+WARNING:root:Cannot find the box office of Claudine_(film)
+WARNING:root:Cannot find the box office of Lili
+WARNING:root:Cannot find the box office of Lovers_and_Other_Strangers
+WARNING:root:Cannot find the box office of Darling_(1965_film)
+WARNING:root:Cannot find the information box of Sideways
+WARNING:root:Cannot find the box office of An_Unmarried_Woman
+WARNING:root:Cannot find the box office of Affliction_(1997_film)
+WARNING:root:Cannot find the information box of Only When I Laugh (film)
+WARNING:root:Cannot find the box office of It_Happened_One_Night
+WARNING:root:Cannot find the information box of A Double Life (1947 film)
+WARNING:root:Cannot find the box office of Sergeant_York_(film)
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): en.wikipedia.org:443
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/List_of_actors_with_Academy_Award_nominations HTTP/1.1" 200 445142
+DEBUG:root:processing https://en.wikipedia.org/wiki/Christian_Bale
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): en.wikipedia.org:443
+DEBUG:root:processing https://en.wikipedia.org/wiki/The_Fighter
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): en.wikipedia.org:443
+DEBUG:root:processing https://en.wikipedia.org/wiki/Natalie_Portman
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): en.wikipedia.org:443
+DEBUG:root:processing https://en.wikipedia.org/wiki/Black_Swan_(film)
+DEBUG:root:processing https://en.wikipedia.org/wiki/Melissa_Leo
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): en.wikipedia.org:443
+DEBUG:root:processing https://en.wikipedia.org/wiki/Colin_Firth
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): en.wikipedia.org:443
+DEBUG:root:processing https://en.wikipedia.org/wiki/The_King%27s_Speech
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): en.wikipedia.org:443
+DEBUG:root:processing https://en.wikipedia.org/wiki/Film
+DEBUG:root:processing https://en.wikipedia.org/wiki/Katharine_Hepburn
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): en.wikipedia.org:443
+DEBUG:root:processing https://en.wikipedia.org/wiki/Daniel_Day-Lewis
+DEBUG:root:processing https://en.wikipedia.org/wiki/Meryl_Streep
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): en.wikipedia.org:443
+DEBUG:root:processing https://en.wikipedia.org/wiki/Jack_Nicholson
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): en.wikipedia.org:443
+INFO:root:Start Scraping
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): en.wikipedia.org:443
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): en.wikipedia.org:443
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): en.wikipedia.org:443
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/The_Fighter HTTP/1.1" 200 152041
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Katharine_Hepburn HTTP/1.1" 200 530681
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Natalie_Portman HTTP/1.1" 200 386139
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Christian_Bale HTTP/1.1" 200 348260
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Melissa_Leo HTTP/1.1" 200 194492
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/The_King%27s_Speech HTTP/1.1" 200 302435
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Meryl_Streep HTTP/1.1" 200 837128
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Jack_Nicholson HTTP/1.1" 200 457163
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Colin_Firth HTTP/1.1" 200 405197
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Black_Swan_(film) HTTP/1.1" 200 228973
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Daniel_Day-Lewis HTTP/1.1" 200 367062
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Film HTTP/1.1" 200 230979
+DEBUG:root:processing https://en.wikipedia.org/wiki/JavaScript
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/JavaScript HTTP/1.1" 200 408606
+DEBUG:root:processing https://en.wikipedia.org/wiki/Barkhad_Abdi
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Barkhad_Abdi HTTP/1.1" 200 96360
+DEBUG:root:processing https://en.wikipedia.org/wiki/Captain_Phillips_(film)
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Captain_Phillips_(film) HTTP/1.1" 200 196741
+DEBUG:root:processing https://en.wikipedia.org/wiki/F._Murray_Abraham
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/F._Murray_Abraham HTTP/1.1" 200 164626
+DEBUG:root:processing https://en.wikipedia.org/wiki/Amadeus_(film)
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Amadeus_(film) HTTP/1.1" 200 193972
+DEBUG:root:processing https://en.wikipedia.org/wiki/Amy_Adams
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Amy_Adams HTTP/1.1" 200 472143
+DEBUG:root:processing https://en.wikipedia.org/wiki/American_Hustle
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/American_Hustle HTTP/1.1" 200 173730
+DEBUG:root:processing https://en.wikipedia.org/wiki/Nick_Adams_(actor,_born_1931)
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Nick_Adams_(actor,_born_1931) HTTP/1.1" 200 142928
+DEBUG:root:processing https://en.wikipedia.org/wiki/Twilight_of_Honor
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Twilight_of_Honor HTTP/1.1" 200 52849
+DEBUG:root:processing https://en.wikipedia.org/wiki/Isabelle_Adjani
+DEBUG:root:processing https://en.wikipedia.org/wiki/The_Story_of_Adele_H.
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Isabelle_Adjani HTTP/1.1" 200 215455
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/The_Story_of_Adele_H. HTTP/1.1" 200 92203
+DEBUG:root:processing https://en.wikipedia.org/wiki/Casey_Affleck
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Casey_Affleck HTTP/1.1" 200 441286
+DEBUG:root:processing https://en.wikipedia.org/wiki/Manchester_by_the_Sea_(film)
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Manchester_by_the_Sea_(film) HTTP/1.1" 200 223707
+DEBUG:root:processing https://en.wikipedia.org/wiki/Shohreh_Aghdashloo
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Shohreh_Aghdashloo HTTP/1.1" 200 127354
+WARNING:root:Cannot find the box office of The_Story_of_Adele_H.
+DEBUG:root:processing https://en.wikipedia.org/wiki/House_of_Sand_and_Fog_(film)
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/House_of_Sand_and_Fog_(film) HTTP/1.1" 200 78679
+DEBUG:root:processing https://en.wikipedia.org/wiki/Brian_Aherne
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Brian_Aherne HTTP/1.1" 200 105285
+DEBUG:root:processing https://en.wikipedia.org/wiki/Juarez_(film)
+DEBUG:root:processing https://en.wikipedia.org/wiki/Danny_Aiello
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Danny_Aiello HTTP/1.1" 200 106551
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Juarez_(film) HTTP/1.1" 200 74206
+DEBUG:root:processing https://en.wikipedia.org/wiki/Do_the_Right_Thing
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Do_the_Right_Thing HTTP/1.1" 200 151907
+DEBUG:root:processing https://en.wikipedia.org/wiki/Anouk_Aim%C3%A9e
+DEBUG:root:processing https://en.wikipedia.org/wiki/A_Man_and_a_Woman
+DEBUG:root:processing https://en.wikipedia.org/wiki/Eddie_Albert
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Anouk_Aim%C3%A9e HTTP/1.1" 200 133481
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/A_Man_and_a_Woman HTTP/1.1" 200 151264
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Eddie_Albert HTTP/1.1" 200 171981
+DEBUG:root:processing https://en.wikipedia.org/wiki/Roman_Holiday
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Roman_Holiday HTTP/1.1" 200 110254
+DEBUG:root:processing https://en.wikipedia.org/wiki/Jack_Albertson
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Jack_Albertson HTTP/1.1" 200 143316
+DEBUG:root:processing https://en.wikipedia.org/wiki/The_Subject_Was_Roses_(film)
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/The_Subject_Was_Roses_(film) HTTP/1.1" 200 59597
+DEBUG:root:processing https://en.wikipedia.org/wiki/Alan_Alda
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Alan_Alda HTTP/1.1" 200 334827
+DEBUG:root:processing https://en.wikipedia.org/wiki/The_Aviator_(2004_film)
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/The_Aviator_(2004_film) HTTP/1.1" 200 195085
+DEBUG:root:processing https://en.wikipedia.org/wiki/Norma_Aleandro
+DEBUG:root:processing https://en.wikipedia.org/wiki/Gaby:_A_True_Story
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Norma_Aleandro HTTP/1.1" 200 106782
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Gaby:_A_True_Story HTTP/1.1" 200 43389
+DEBUG:root:processing https://en.wikipedia.org/wiki/Jane_Alexander
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Jane_Alexander HTTP/1.1" 200 129060
+DEBUG:root:processing https://en.wikipedia.org/wiki/The_Great_White_Hope_(film)
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/The_Great_White_Hope_(film) HTTP/1.1" 200 52961
+DEBUG:root:processing https://en.wikipedia.org/wiki/Mahershala_Ali
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Mahershala_Ali HTTP/1.1" 200 171996
+DEBUG:root:processing https://en.wikipedia.org/wiki/Moonlight_(2016_film)
+DEBUG:root:processing https://en.wikipedia.org/wiki/Joan_Allen
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Moonlight_(2016_film) HTTP/1.1" 200 330822
+DEBUG:root:processing https://en.wikipedia.org/wiki/The_Contender_(2000_film)
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Joan_Allen HTTP/1.1" 200 172157
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/The_Contender_(2000_film) HTTP/1.1" 200 115025
+DEBUG:root:processing https://en.wikipedia.org/wiki/Woody_Allen
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Woody_Allen HTTP/1.1" 200 562686
+DEBUG:root:processing https://en.wikipedia.org/wiki/Annie_Hall
+DEBUG:root:processing https://en.wikipedia.org/wiki/Sara_Allgood
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Annie_Hall HTTP/1.1" 200 281392
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Sara_Allgood HTTP/1.1" 200 70093
+DEBUG:root:processing https://en.wikipedia.org/wiki/How_Green_Was_My_Valley_(film)
+DEBUG:root:processing https://en.wikipedia.org/wiki/Don_Ameche
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/How_Green_Was_My_Valley_(film) HTTP/1.1" 200 159229
+DEBUG:root:processing https://en.wikipedia.org/wiki/Cocoon_(film)
+DEBUG:root:processing https://en.wikipedia.org/wiki/Judith_Anderson
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Don_Ameche HTTP/1.1" 200 158606
+DEBUG:root:processing https://en.wikipedia.org/wiki/Rebecca_(1940_film)
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Cocoon_(film) HTTP/1.1" 200 91891
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Rebecca_(1940_film) HTTP/1.1" 200 154314
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Judith_Anderson HTTP/1.1" 200 157348
+DEBUG:root:processing https://en.wikipedia.org/wiki/Julie_Andrews
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Julie_Andrews HTTP/1.1" 200 353752
+DEBUG:root:processing https://en.wikipedia.org/wiki/Mary_Poppins_(film)
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Mary_Poppins_(film) HTTP/1.1" 200 248419
+DEBUG:root:processing https://en.wikipedia.org/wiki/Ann-Margret
+DEBUG:root:processing https://en.wikipedia.org/wiki/Tommy_(1975_film)
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Ann-Margret HTTP/1.1" 200 209384
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Tommy_(1975_film) HTTP/1.1" 200 146119
+DEBUG:root:processing https://en.wikipedia.org/wiki/Yalitza_Aparicio
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Yalitza_Aparicio HTTP/1.1" 200 78007
+DEBUG:root:processing https://en.wikipedia.org/wiki/Roma_(2018_film)
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Roma_(2018_film) HTTP/1.1" 200 245645
+DEBUG:root:processing https://en.wikipedia.org/wiki/Anne_Archer
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Anne_Archer HTTP/1.1" 200 88554
+DEBUG:root:processing https://en.wikipedia.org/wiki/Fatal_Attraction
+DEBUG:root:processing https://en.wikipedia.org/wiki/Eve_Arden
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Fatal_Attraction HTTP/1.1" 200 133405
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Eve_Arden HTTP/1.1" 200 134240
+DEBUG:root:processing https://en.wikipedia.org/wiki/Mildred_Pierce_(film)
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Mildred_Pierce_(film) HTTP/1.1" 200 121870
+DEBUG:root:processing https://en.wikipedia.org/wiki/Alan_Arkin
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Alan_Arkin HTTP/1.1" 200 203932
+DEBUG:root:processing https://en.wikipedia.org/wiki/Little_Miss_Sunshine
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Little_Miss_Sunshine HTTP/1.1" 200 294548
+DEBUG:root:processing https://en.wikipedia.org/wiki/George_Arliss
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/George_Arliss HTTP/1.1" 200 94052
+DEBUG:root:processing https://en.wikipedia.org/wiki/Disraeli_(1929_film)
+DEBUG:root:processing https://en.wikipedia.org/wiki/Patricia_Arquette
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Patricia_Arquette HTTP/1.1" 200 305160
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Disraeli_(1929_film) HTTP/1.1" 200 70579
+WARNING:root:Cannot find the box office of Mildred_Pierce_(film)
+DEBUG:root:processing https://en.wikipedia.org/wiki/Boyhood_(film)
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Boyhood_(film) HTTP/1.1" 200 285560
+DEBUG:root:processing https://en.wikipedia.org/wiki/Jean_Arthur
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Jean_Arthur HTTP/1.1" 200 143580
+DEBUG:root:processing https://en.wikipedia.org/wiki/The_More_the_Merrier
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/The_More_the_Merrier HTTP/1.1" 200 75095
+WARNING:root:Cannot find the box office of Disraeli_(1929_film)
+DEBUG:root:processing https://en.wikipedia.org/wiki/Peggy_Ashcroft
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Peggy_Ashcroft HTTP/1.1" 200 226881
+DEBUG:root:processing https://en.wikipedia.org/wiki/A_Passage_to_India_(film)
+DEBUG:root:processing https://en.wikipedia.org/wiki/Fred_Astaire
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/A_Passage_to_India_(film) HTTP/1.1" 200 133179
+DEBUG:root:processing https://en.wikipedia.org/wiki/The_Towering_Inferno
+DEBUG:root:processing https://en.wikipedia.org/wiki/Mary_Astor
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/The_Towering_Inferno HTTP/1.1" 200 164740
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Fred_Astaire HTTP/1.1" 200 325522
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Mary_Astor HTTP/1.1" 200 153376
+DEBUG:root:processing https://en.wikipedia.org/wiki/The_Great_Lie
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/The_Great_Lie HTTP/1.1" 200 70182
+DEBUG:root:processing https://en.wikipedia.org/wiki/Mischa_Auer
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Mischa_Auer HTTP/1.1" 200 88116
+DEBUG:root:processing https://en.wikipedia.org/wiki/My_Man_Godfrey
+DEBUG:root:processing https://en.wikipedia.org/wiki/Margaret_Avery
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/My_Man_Godfrey HTTP/1.1" 200 90526
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Margaret_Avery HTTP/1.1" 200 73963
+DEBUG:root:processing https://en.wikipedia.org/wiki/The_Color_Purple_(film)
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/The_Color_Purple_(film) HTTP/1.1" 200 150639
+DEBUG:root:processing https://en.wikipedia.org/wiki/Dan_Aykroyd
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Dan_Aykroyd HTTP/1.1" 200 226337
+DEBUG:root:processing https://en.wikipedia.org/wiki/Driving_Miss_Daisy
+WARNING:root:Cannot find the box office of My_Man_Godfrey
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Driving_Miss_Daisy HTTP/1.1" 200 139929
+DEBUG:root:processing https://en.wikipedia.org/wiki/Lew_Ayres
+DEBUG:root:processing https://en.wikipedia.org/wiki/Johnny_Belinda_(1948_film)
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Lew_Ayres HTTP/1.1" 200 103462
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Johnny_Belinda_(1948_film) HTTP/1.1" 200 97468
+WARNING:root:Cannot find the information box of Peggy Ashcroft
+DEBUG:root:processing https://en.wikipedia.org/wiki/Lauren_Bacall
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Lauren_Bacall HTTP/1.1" 200 344459
+DEBUG:root:processing https://en.wikipedia.org/wiki/The_Mirror_Has_Two_Faces
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/The_Mirror_Has_Two_Faces HTTP/1.1" 200 102961
+DEBUG:root:processing https://en.wikipedia.org/wiki/Hermione_Baddeley
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Hermione_Baddeley HTTP/1.1" 200 78624
+DEBUG:root:processing https://en.wikipedia.org/wiki/Room_at_the_Top_(1959_film)
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Room_at_the_Top_(1959_film) HTTP/1.1" 200 90987
+DEBUG:root:processing https://en.wikipedia.org/wiki/Mary_Badham
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Mary_Badham HTTP/1.1" 200 61904
+DEBUG:root:processing https://en.wikipedia.org/wiki/To_Kill_a_Mockingbird_(film)
+DEBUG:root:processing https://en.wikipedia.org/wiki/Fay_Bainter
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/To_Kill_a_Mockingbird_(film) HTTP/1.1" 200 134429
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Fay_Bainter HTTP/1.1" 200 80412
+DEBUG:root:processing https://en.wikipedia.org/wiki/Jezebel_(film)
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Jezebel_(film) HTTP/1.1" 200 80547
+DEBUG:root:processing https://en.wikipedia.org/wiki/Carroll_Baker
+DEBUG:root:processing https://en.wikipedia.org/wiki/Baby_Doll
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Carroll_Baker HTTP/1.1" 200 271973
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Baby_Doll HTTP/1.1" 200 105855
+DEBUG:root:processing https://en.wikipedia.org/wiki/Alec_Baldwin
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Alec_Baldwin HTTP/1.1" 200 333118
+DEBUG:root:processing https://en.wikipedia.org/wiki/The_Cooler
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/The_Cooler HTTP/1.1" 200 56086
+DEBUG:root:processing https://en.wikipedia.org/wiki/Christian_Bale
+DEBUG:root:processing https://en.wikipedia.org/wiki/The_Fighter
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Christian_Bale HTTP/1.1" 200 348260
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/The_Fighter HTTP/1.1" 200 152041
+DEBUG:root:processing https://en.wikipedia.org/wiki/Martin_Balsam
+DEBUG:root:processing https://en.wikipedia.org/wiki/A_Thousand_Clowns
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Martin_Balsam HTTP/1.1" 200 142230
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/A_Thousand_Clowns HTTP/1.1" 200 55932
+DEBUG:root:processing https://en.wikipedia.org/wiki/Anne_Bancroft
+DEBUG:root:processing https://en.wikipedia.org/wiki/The_Miracle_Worker_(1962_film)
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/The_Miracle_Worker_(1962_film) HTTP/1.1" 200 72822
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Anne_Bancroft HTTP/1.1" 200 242295
+DEBUG:root:processing https://en.wikipedia.org/wiki/George_Bancroft_(actor)
+DEBUG:root:processing https://en.wikipedia.org/wiki/Thunderbolt_(1929_film)
+DEBUG:root:processing https://en.wikipedia.org/wiki/Ian_Bannen
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/George_Bancroft_(actor) HTTP/1.1" 200 75148
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Thunderbolt_(1929_film) HTTP/1.1" 200 64250
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Ian_Bannen HTTP/1.1" 200 75630
+DEBUG:root:processing https://en.wikipedia.org/wiki/The_Flight_of_the_Phoenix_(1965_film)
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/The_Flight_of_the_Phoenix_(1965_film) HTTP/1.1" 200 82526
+DEBUG:root:processing https://en.wikipedia.org/wiki/Javier_Bardem
+DEBUG:root:processing https://en.wikipedia.org/wiki/No_Country_for_Old_Men_(film)
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/No_Country_for_Old_Men_(film) HTTP/1.1" 200 393235
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Javier_Bardem HTTP/1.1" 200 324653
+DEBUG:root:processing https://en.wikipedia.org/wiki/Marie-Christine_Barrault
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Marie-Christine_Barrault HTTP/1.1" 200 58638
+DEBUG:root:processing https://en.wikipedia.org/wiki/Cousin_Cousine
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Cousin_Cousine HTTP/1.1" 200 66281
+DEBUG:root:processing https://en.wikipedia.org/wiki/Adriana_Barraza
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Adriana_Barraza HTTP/1.1" 200 62511
+DEBUG:root:processing https://en.wikipedia.org/wiki/Babel_(film)
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Babel_(film) HTTP/1.1" 200 161082
+DEBUG:root:processing https://en.wikipedia.org/wiki/Barbara_Barrie
+DEBUG:root:processing https://en.wikipedia.org/wiki/Breaking_Away
+DEBUG:root:processing https://en.wikipedia.org/wiki/Ethel_Barrymore
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Barbara_Barrie HTTP/1.1" 200 114340
+DEBUG:root:processing https://en.wikipedia.org/wiki/None_but_the_Lonely_Heart_(film)
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Breaking_Away HTTP/1.1" 200 118168
+DEBUG:root:processing https://en.wikipedia.org/wiki/Lionel_Barrymore
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Ethel_Barrymore HTTP/1.1" 200 111481
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/None_but_the_Lonely_Heart_(film) HTTP/1.1" 200 74950
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Lionel_Barrymore HTTP/1.1" 200 152061
+DEBUG:root:processing https://en.wikipedia.org/wiki/A_Free_Soul
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/A_Free_Soul HTTP/1.1" 200 78505
+DEBUG:root:processing https://en.wikipedia.org/wiki/Richard_Barthelmess
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Richard_Barthelmess HTTP/1.1" 200 93707
+DEBUG:root:processing https://en.wikipedia.org/wiki/The_Patent_Leather_Kid
+DEBUG:root:processing https://en.wikipedia.org/wiki/Mikhail_Baryshnikov
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/The_Patent_Leather_Kid HTTP/1.1" 200 42029
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Mikhail_Baryshnikov HTTP/1.1" 200 184005
+DEBUG:root:processing https://en.wikipedia.org/wiki/The_Turning_Point_(1977_film)
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/The_Turning_Point_(1977_film) HTTP/1.1" 200 113162
+DEBUG:root:processing https://en.wikipedia.org/wiki/Kim_Basinger
+DEBUG:root:processing https://en.wikipedia.org/wiki/L.A._Confidential_(film)
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Kim_Basinger HTTP/1.1" 200 201736
+WARNING:root:Cannot find the box office of A_Free_Soul
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/L.A._Confidential_(film) HTTP/1.1" 200 227722
+DEBUG:root:processing https://en.wikipedia.org/wiki/Albert_Bassermann
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Albert_Bassermann HTTP/1.1" 200 74368
+DEBUG:root:processing https://en.wikipedia.org/wiki/Foreign_Correspondent_(film)
+DEBUG:root:processing https://en.wikipedia.org/wiki/Angela_Bassett
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Angela_Bassett HTTP/1.1" 200 264826
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Foreign_Correspondent_(film) HTTP/1.1" 200 106329
+DEBUG:root:processing https://en.wikipedia.org/wiki/What%27s_Love_Got_to_Do_with_It_(film)
+DEBUG:root:processing https://en.wikipedia.org/wiki/Alan_Bates
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/What%27s_Love_Got_to_Do_with_It_(film) HTTP/1.1" 200 122543
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Alan_Bates HTTP/1.1" 200 148509
+DEBUG:root:processing https://en.wikipedia.org/wiki/The_Fixer_(1968_film)
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/The_Fixer_(1968_film) HTTP/1.1" 200 50133
+DEBUG:root:processing https://en.wikipedia.org/wiki/Kathy_Bates
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Kathy_Bates HTTP/1.1" 200 179974
+DEBUG:root:processing https://en.wikipedia.org/wiki/Misery_(film)
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Misery_(film) HTTP/1.1" 200 145046
+DEBUG:root:processing https://en.wikipedia.org/wiki/Anne_Baxter
+DEBUG:root:processing https://en.wikipedia.org/wiki/The_Razor%27s_Edge_(1946_film)
+DEBUG:root:processing https://en.wikipedia.org/wiki/Warner_Baxter
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Anne_Baxter HTTP/1.1" 200 179697
+WARNING:root:Cannot find the box office of Foreign_Correspondent_(film)
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/The_Razor%27s_Edge_(1946_film) HTTP/1.1" 200 88081
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Warner_Baxter HTTP/1.1" 200 108850
+DEBUG:root:processing https://en.wikipedia.org/wiki/In_Old_Arizona
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/In_Old_Arizona HTTP/1.1" 200 62784
+DEBUG:root:processing https://en.wikipedia.org/wiki/Ned_Beatty
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Ned_Beatty HTTP/1.1" 200 148378
+DEBUG:root:processing https://en.wikipedia.org/wiki/Network_(1976_film)
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Network_(1976_film) HTTP/1.1" 200 143155
+DEBUG:root:processing https://en.wikipedia.org/wiki/Warren_Beatty
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Warren_Beatty HTTP/1.1" 200 409283
+DEBUG:root:processing https://en.wikipedia.org/wiki/Bonnie_and_Clyde_(film)
+DEBUG:root:processing https://en.wikipedia.org/wiki/Wallace_Beery
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Bonnie_and_Clyde_(film) HTTP/1.1" 200 139991
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Wallace_Beery HTTP/1.1" 200 197308
+DEBUG:root:processing https://en.wikipedia.org/wiki/The_Champ_(1931_film)
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/The_Champ_(1931_film) HTTP/1.1" 200 93845
+DEBUG:root:processing https://en.wikipedia.org/wiki/Ed_Begley
+DEBUG:root:processing https://en.wikipedia.org/wiki/Sweet_Bird_of_Youth
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Sweet_Bird_of_Youth HTTP/1.1" 200 65843
+DEBUG:root:processing https://en.wikipedia.org/wiki/B%C3%A9r%C3%A9nice_Bejo
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Ed_Begley HTTP/1.1" 200 103543
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/B%C3%A9r%C3%A9nice_Bejo HTTP/1.1" 200 106677
+DEBUG:root:processing https://en.wikipedia.org/wiki/The_Artist_(film)
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/The_Artist_(film) HTTP/1.1" 200 298993
+DEBUG:root:processing https://en.wikipedia.org/wiki/Barbara_Bel_Geddes
+DEBUG:root:processing https://en.wikipedia.org/wiki/I_Remember_Mama_(film)
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Barbara_Bel_Geddes HTTP/1.1" 200 114579
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/I_Remember_Mama_(film) HTTP/1.1" 200 72692
+DEBUG:root:processing https://en.wikipedia.org/wiki/Ralph_Bellamy
+DEBUG:root:processing https://en.wikipedia.org/wiki/The_Awful_Truth
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Ralph_Bellamy HTTP/1.1" 200 148499
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/The_Awful_Truth HTTP/1.1" 200 73614
+WARNING:root:Cannot find the information box of Sweet_Bird_of_Youth
+DEBUG:root:processing https://en.wikipedia.org/wiki/William_Bendix
+DEBUG:root:processing https://en.wikipedia.org/wiki/Wake_Island_(film)
+DEBUG:root:processing https://en.wikipedia.org/wiki/Roberto_Benigni
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/William_Bendix HTTP/1.1" 200 93117
+DEBUG:root:processing https://en.wikipedia.org/wiki/Life_Is_Beautiful
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Wake_Island_(film) HTTP/1.1" 200 77588
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Roberto_Benigni HTTP/1.1" 200 232067
+DEBUG:root:processing https://en.wikipedia.org/wiki/Annette_Bening
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Life_Is_Beautiful HTTP/1.1" 200 202512
+DEBUG:root:processing https://en.wikipedia.org/wiki/American_Beauty_(1999_film)
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Annette_Bening HTTP/1.1" 200 165678
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/American_Beauty_(1999_film) HTTP/1.1" 200 398308
+DEBUG:root:processing https://en.wikipedia.org/wiki/Tom_Berenger
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Tom_Berenger HTTP/1.1" 200 107360
+DEBUG:root:processing https://en.wikipedia.org/wiki/Platoon_(film)
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Platoon_(film) HTTP/1.1" 200 174809
+DEBUG:root:processing https://en.wikipedia.org/wiki/Candice_Bergen
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Candice_Bergen HTTP/1.1" 200 165822
+DEBUG:root:processing https://en.wikipedia.org/wiki/Starting_Over_(1979_film)
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Starting_Over_(1979_film) HTTP/1.1" 200 50990
+DEBUG:root:processing https://en.wikipedia.org/wiki/Ingrid_Bergman
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Ingrid_Bergman HTTP/1.1" 200 368300
+DEBUG:root:processing https://en.wikipedia.org/wiki/Gaslight_(1944_film)
+DEBUG:root:processing https://en.wikipedia.org/wiki/Elisabeth_Bergner
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Elisabeth_Bergner HTTP/1.1" 200 70395
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Gaslight_(1944_film) HTTP/1.1" 200 87368
+WARNING:root:Cannot find the information box of The Artist (film)
+DEBUG:root:processing https://en.wikipedia.org/wiki/Escape_Me_Never_(1935_film)
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Escape_Me_Never_(1935_film) HTTP/1.1" 200 50807
+WARNING:root:Cannot find the box office of Starting_Over_(1979_film)
+DEBUG:root:processing https://en.wikipedia.org/wiki/Jeannie_Berlin
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Jeannie_Berlin HTTP/1.1" 200 76151
+DEBUG:root:processing https://en.wikipedia.org/wiki/The_Heartbreak_Kid_(1972_film)
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/The_Heartbreak_Kid_(1972_film) HTTP/1.1" 200 84040
+DEBUG:root:processing https://en.wikipedia.org/wiki/Halle_Berry
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Halle_Berry HTTP/1.1" 200 325225
+DEBUG:root:processing https://en.wikipedia.org/wiki/Monster%27s_Ball
+WARNING:root:Cannot find the box office of Gaslight_(1944_film)
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Monster%27s_Ball HTTP/1.1" 200 66338
+DEBUG:root:processing https://en.wikipedia.org/wiki/Demi%C3%A1n_Bichir
+DEBUG:root:processing https://en.wikipedia.org/wiki/A_Better_Life
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/A_Better_Life HTTP/1.1" 200 67453
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Demi%C3%A1n_Bichir HTTP/1.1" 200 104402
+DEBUG:root:processing https://en.wikipedia.org/wiki/Charles_Bickford
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Charles_Bickford HTTP/1.1" 200 97283
+DEBUG:root:processing https://en.wikipedia.org/wiki/The_Song_of_Bernadette_(film)
+WARNING:root:Cannot find the box office of A_Better_Life
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/The_Song_of_Bernadette_(film) HTTP/1.1" 200 106485
+DEBUG:root:processing https://en.wikipedia.org/wiki/Theodore_Bikel
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Theodore_Bikel HTTP/1.1" 200 159514
+DEBUG:root:processing https://en.wikipedia.org/wiki/The_Defiant_Ones_(film)
+DEBUG:root:processing https://en.wikipedia.org/wiki/Juliette_Binoche
+DEBUG:root:processing https://en.wikipedia.org/wiki/The_English_Patient_(film)
+DEBUG:root:processing https://en.wikipedia.org/wiki/Karen_Black
+DEBUG:root:processing https://en.wikipedia.org/wiki/Five_Easy_Pieces
+DEBUG:root:processing https://en.wikipedia.org/wiki/Betsy_Blair
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/The_Defiant_Ones_(film) HTTP/1.1" 200 97562
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Juliette_Binoche HTTP/1.1" 200 416413
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/The_English_Patient_(film) HTTP/1.1" 200 162324
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Karen_Black HTTP/1.1" 200 154727
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Betsy_Blair HTTP/1.1" 200 81446
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Five_Easy_Pieces HTTP/1.1" 200 91348
+DEBUG:root:processing https://en.wikipedia.org/wiki/Marty_(film)
+DEBUG:root:processing https://en.wikipedia.org/wiki/Linda_Blair
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Marty_(film) HTTP/1.1" 200 154411
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Linda_Blair HTTP/1.1" 200 181479
+DEBUG:root:processing https://en.wikipedia.org/wiki/The_Exorcist_(film)
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/The_Exorcist_(film) HTTP/1.1" 200 296440
+DEBUG:root:processing https://en.wikipedia.org/wiki/Ronee_Blakley
+DEBUG:root:processing https://en.wikipedia.org/wiki/Nashville_(film)
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Ronee_Blakley HTTP/1.1" 200 83333
+DEBUG:root:processing https://en.wikipedia.org/wiki/Cate_Blanchett
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Nashville_(film) HTTP/1.1" 200 162278
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Cate_Blanchett HTTP/1.1" 200 586438
+DEBUG:root:processing https://en.wikipedia.org/wiki/Blue_Jasmine
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Blue_Jasmine HTTP/1.1" 200 122564
+DEBUG:root:processing https://en.wikipedia.org/wiki/Brenda_Blethyn
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Brenda_Blethyn HTTP/1.1" 200 254088
+DEBUG:root:processing https://en.wikipedia.org/wiki/Secrets_%26_Lies_(film)
+DEBUG:root:processing https://en.wikipedia.org/wiki/Mary_J._Blige
+DEBUG:root:processing https://en.wikipedia.org/wiki/Mudbound_(film)
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Secrets_%26_Lies_(film) HTTP/1.1" 200 135357
+DEBUG:root:processing https://en.wikipedia.org/wiki/Joan_Blondell
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Mudbound_(film) HTTP/1.1" 200 174439
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Mary_J._Blige HTTP/1.1" 200 309764
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Joan_Blondell HTTP/1.1" 200 176310
+DEBUG:root:processing https://en.wikipedia.org/wiki/The_Blue_Veil_(1951_film)
+DEBUG:root:processing https://en.wikipedia.org/wiki/Ann_Blyth
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Ann_Blyth HTTP/1.1" 200 106661
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/The_Blue_Veil_(1951_film) HTTP/1.1" 200 65703
+DEBUG:root:processing https://en.wikipedia.org/wiki/Mildred_Pierce_(film)
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Mildred_Pierce_(film) HTTP/1.1" 200 121870
+WARNING:root:Cannot find the information box of The Exorcist (film)
+DEBUG:root:processing https://en.wikipedia.org/wiki/Humphrey_Bogart
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Humphrey_Bogart HTTP/1.1" 200 309294
+DEBUG:root:processing https://en.wikipedia.org/wiki/The_African_Queen_(film)
+DEBUG:root:processing https://en.wikipedia.org/wiki/Beulah_Bondi
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/The_African_Queen_(film) HTTP/1.1" 200 129385
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Beulah_Bondi HTTP/1.1" 200 84574
+WARNING:root:Cannot find the box office of The_Blue_Veil_(1951_film)
+DEBUG:root:processing https://en.wikipedia.org/wiki/The_Gorgeous_Hussy
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/The_Gorgeous_Hussy HTTP/1.1" 200 60675
+DEBUG:root:processing https://en.wikipedia.org/wiki/Helena_Bonham_Carter
+WARNING:root:Cannot find the box office of Mudbound_(film)
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Helena_Bonham_Carter HTTP/1.1" 200 328888
+DEBUG:root:processing https://en.wikipedia.org/wiki/The_Wings_of_the_Dove_(1997_film)
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/The_Wings_of_the_Dove_(1997_film) HTTP/1.1" 200 87161
+DEBUG:root:processing https://en.wikipedia.org/wiki/Shirley_Booth
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Shirley_Booth HTTP/1.1" 200 252424
+DEBUG:root:processing https://en.wikipedia.org/wiki/Come_Back,_Little_Sheba_(1952_film)
+WARNING:root:Cannot find the box office of The_Gorgeous_Hussy
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Come_Back,_Little_Sheba_(1952_film) HTTP/1.1" 200 53099
+DEBUG:root:processing https://en.wikipedia.org/wiki/Ernest_Borgnine
+WARNING:root:Cannot find the box office of The_African_Queen_(film)
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Ernest_Borgnine HTTP/1.1" 200 270583
+DEBUG:root:processing https://en.wikipedia.org/wiki/Marty_(film)
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Marty_(film) HTTP/1.1" 200 154411
+DEBUG:root:processing https://en.wikipedia.org/wiki/Charles_Boyer
+DEBUG:root:processing https://en.wikipedia.org/wiki/Conquest_(1937_film)
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Conquest_(1937_film) HTTP/1.1" 200 58543
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Charles_Boyer HTTP/1.1" 200 193445
+DEBUG:root:processing https://en.wikipedia.org/wiki/Lorraine_Bracco
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Lorraine_Bracco HTTP/1.1" 200 141688
+DEBUG:root:processing https://en.wikipedia.org/wiki/Goodfellas
+DEBUG:root:processing https://en.wikipedia.org/wiki/Alice_Brady
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Goodfellas HTTP/1.1" 200 226822
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Alice_Brady HTTP/1.1" 200 100390
+DEBUG:root:processing https://en.wikipedia.org/wiki/In_Old_Chicago
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/In_Old_Chicago HTTP/1.1" 200 89285
+DEBUG:root:processing https://en.wikipedia.org/wiki/Kenneth_Branagh
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Kenneth_Branagh HTTP/1.1" 200 233882
+DEBUG:root:processing https://en.wikipedia.org/wiki/Henry_V_(1989_film)
+DEBUG:root:processing https://en.wikipedia.org/wiki/Klaus_Maria_Brandauer
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Henry_V_(1989_film) HTTP/1.1" 200 133548
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Klaus_Maria_Brandauer HTTP/1.1" 200 111733
+DEBUG:root:processing https://en.wikipedia.org/wiki/Out_of_Africa_(film)
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Out_of_Africa_(film) HTTP/1.1" 200 121898
+DEBUG:root:processing https://en.wikipedia.org/wiki/Marlon_Brando
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Marlon_Brando HTTP/1.1" 200 433507
+DEBUG:root:processing https://en.wikipedia.org/wiki/On_the_Waterfront
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/On_the_Waterfront HTTP/1.1" 200 171781
+DEBUG:root:processing https://en.wikipedia.org/wiki/Eileen_Brennan
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Eileen_Brennan HTTP/1.1" 200 126655
+DEBUG:root:processing https://en.wikipedia.org/wiki/Private_Benjamin_(1980_film)
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Private_Benjamin_(1980_film) HTTP/1.1" 200 69052
+DEBUG:root:processing https://en.wikipedia.org/wiki/Walter_Brennan
+DEBUG:root:processing https://en.wikipedia.org/wiki/Come_and_Get_It_(1936_film)
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Walter_Brennan HTTP/1.1" 200 204560
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Come_and_Get_It_(1936_film) HTTP/1.1" 200 80007
+DEBUG:root:processing https://en.wikipedia.org/wiki/Abigail_Breslin
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Abigail_Breslin HTTP/1.1" 200 207793
+DEBUG:root:processing https://en.wikipedia.org/wiki/Little_Miss_Sunshine
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Little_Miss_Sunshine HTTP/1.1" 200 294548
+DEBUG:root:processing https://en.wikipedia.org/wiki/Jeff_Bridges
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Jeff_Bridges HTTP/1.1" 200 253557
+DEBUG:root:processing https://en.wikipedia.org/wiki/Crazy_Heart
+DEBUG:root:processing https://en.wikipedia.org/wiki/Jim_Broadbent
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Crazy_Heart HTTP/1.1" 200 94290
+DEBUG:root:processing https://en.wikipedia.org/wiki/Iris_(2001_film)
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Jim_Broadbent HTTP/1.1" 200 181968
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Iris_(2001_film) HTTP/1.1" 200 70605
+DEBUG:root:processing https://en.wikipedia.org/wiki/Adrien_Brody
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Adrien_Brody HTTP/1.1" 200 157685
+DEBUG:root:processing https://en.wikipedia.org/wiki/The_Pianist_(2002_film)
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/The_Pianist_(2002_film) HTTP/1.1" 200 162588
+DEBUG:root:processing https://en.wikipedia.org/wiki/Josh_Brolin
+DEBUG:root:processing https://en.wikipedia.org/wiki/Milk_(film)
+DEBUG:root:processing https://en.wikipedia.org/wiki/Albert_Brooks
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Josh_Brolin HTTP/1.1" 200 184938
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Milk_(film) HTTP/1.1" 200 193596
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Albert_Brooks HTTP/1.1" 200 146382
+DEBUG:root:processing https://en.wikipedia.org/wiki/Broadcast_News_(film)
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Broadcast_News_(film) HTTP/1.1" 200 104937
+DEBUG:root:processing https://en.wikipedia.org/wiki/Leslie_Browne
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Leslie_Browne HTTP/1.1" 200 51672
+DEBUG:root:processing https://en.wikipedia.org/wiki/The_Turning_Point_(1977_film)
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/The_Turning_Point_(1977_film) HTTP/1.1" 200 113162
+DEBUG:root:processing https://en.wikipedia.org/wiki/Yul_Brynner
+DEBUG:root:processing https://en.wikipedia.org/wiki/The_King_and_I_(1956_film)
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/The_King_and_I_(1956_film) HTTP/1.1" 200 161246
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Yul_Brynner HTTP/1.1" 200 178682
+DEBUG:root:processing https://en.wikipedia.org/wiki/Genevi%C3%A8ve_Bujold
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Genevi%C3%A8ve_Bujold HTTP/1.1" 200 159609
+DEBUG:root:processing https://en.wikipedia.org/wiki/Anne_of_the_Thousand_Days
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Anne_of_the_Thousand_Days HTTP/1.1" 200 104269
+DEBUG:root:processing https://en.wikipedia.org/wiki/Sandra_Bullock
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Sandra_Bullock HTTP/1.1" 200 369599
+DEBUG:root:processing https://en.wikipedia.org/wiki/The_Blind_Side_(film)
+DEBUG:root:processing https://en.wikipedia.org/wiki/Victor_Buono
+DEBUG:root:processing https://en.wikipedia.org/wiki/What_Ever_Happened_to_Baby_Jane%3F_(1962_film)
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Victor_Buono HTTP/1.1" 200 98802
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/The_Blind_Side_(film) HTTP/1.1" 200 122985
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/What_Ever_Happened_to_Baby_Jane%3F_(1962_film) HTTP/1.1" 200 128441
+DEBUG:root:processing https://en.wikipedia.org/wiki/Billie_Burke
+DEBUG:root:processing https://en.wikipedia.org/wiki/Merrily_We_Live
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Billie_Burke HTTP/1.1" 200 113040
+DEBUG:root:processing https://en.wikipedia.org/wiki/Catherine_Burns
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Merrily_We_Live HTTP/1.1" 200 60881
+DEBUG:root:processing https://en.wikipedia.org/wiki/Last_Summer
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Catherine_Burns HTTP/1.1" 200 40549
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Last_Summer HTTP/1.1" 200 53931
+DEBUG:root:processing https://en.wikipedia.org/wiki/George_Burns
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/George_Burns HTTP/1.1" 200 212827
+DEBUG:root:processing https://en.wikipedia.org/wiki/The_Sunshine_Boys_(1975_film)
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/The_Sunshine_Boys_(1975_film) HTTP/1.1" 200 79967
+WARNING:root:Cannot find the information box of What Ever Happened to Baby Jane? (1962 film)
+DEBUG:root:processing https://en.wikipedia.org/wiki/Ellen_Burstyn
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Ellen_Burstyn HTTP/1.1" 200 328875
+DEBUG:root:processing https://en.wikipedia.org/wiki/Alice_Doesn%27t_Live_Here_Anymore
+DEBUG:root:processing https://en.wikipedia.org/wiki/Richard_Burton
+DEBUG:root:processing https://en.wikipedia.org/wiki/The_Robe_(film)
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Richard_Burton HTTP/1.1" 200 605766
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Alice_Doesn%27t_Live_Here_Anymore HTTP/1.1" 200 107840
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/The_Robe_(film) HTTP/1.1" 200 103531
+DEBUG:root:processing https://en.wikipedia.org/wiki/Gary_Busey
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Gary_Busey HTTP/1.1" 200 159801
+DEBUG:root:processing https://en.wikipedia.org/wiki/The_Buddy_Holly_Story
+DEBUG:root:processing https://en.wikipedia.org/wiki/Red_Buttons
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/The_Buddy_Holly_Story HTTP/1.1" 200 78692
+DEBUG:root:processing https://en.wikipedia.org/wiki/Sayonara
+DEBUG:root:processing https://en.wikipedia.org/wiki/Spring_Byington
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Spring_Byington HTTP/1.1" 200 106374
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Sayonara HTTP/1.1" 200 81063
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Red_Buttons HTTP/1.1" 200 97658
+DEBUG:root:processing https://en.wikipedia.org/wiki/You_Can%27t_Take_It_with_You_(film)
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/You_Can%27t_Take_It_with_You_(film) HTTP/1.1" 200 116230
+DEBUG:root:processing https://en.wikipedia.org/wiki/James_Caan
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/James_Caan HTTP/1.1" 200 180636
+DEBUG:root:processing https://en.wikipedia.org/wiki/The_Godfather
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/The_Godfather HTTP/1.1" 200 456476
+DEBUG:root:processing https://en.wikipedia.org/wiki/Adolph_Caesar
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Adolph_Caesar HTTP/1.1" 200 67640
+DEBUG:root:processing https://en.wikipedia.org/wiki/A_Soldier%27s_Story
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/A_Soldier%27s_Story HTTP/1.1" 200 105085
+DEBUG:root:processing https://en.wikipedia.org/wiki/Nicolas_Cage
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Nicolas_Cage HTTP/1.1" 200 344609
+DEBUG:root:processing https://en.wikipedia.org/wiki/Leaving_Las_Vegas
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Leaving_Las_Vegas HTTP/1.1" 200 132184
+DEBUG:root:processing https://en.wikipedia.org/wiki/James_Cagney
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/James_Cagney HTTP/1.1" 200 365228
+DEBUG:root:processing https://en.wikipedia.org/wiki/Yankee_Doodle_Dandy
+DEBUG:root:processing https://en.wikipedia.org/wiki/Michael_Caine
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Michael_Caine HTTP/1.1" 200 356634
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Yankee_Doodle_Dandy HTTP/1.1" 200 123648
+DEBUG:root:processing https://en.wikipedia.org/wiki/Hannah_and_Her_Sisters
+DEBUG:root:processing https://en.wikipedia.org/wiki/Louis_Calhern
+DEBUG:root:processing https://en.wikipedia.org/wiki/The_Magnificent_Yankee_(1950_film)
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Louis_Calhern HTTP/1.1" 200 90505
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Hannah_and_Her_Sisters HTTP/1.1" 200 128993
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/The_Magnificent_Yankee_(1950_film) HTTP/1.1" 200 53001
+DEBUG:root:processing https://en.wikipedia.org/wiki/Dyan_Cannon
+WARNING:root:Cannot find the box office of A_Soldier%27s_Story
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Dyan_Cannon HTTP/1.1" 200 102011
+DEBUG:root:processing https://en.wikipedia.org/wiki/Bob_%26_Carol_%26_Ted_%26_Alice
+DEBUG:root:processing https://en.wikipedia.org/wiki/Steve_Carell
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Bob_%26_Carol_%26_Ted_%26_Alice HTTP/1.1" 200 65480
+DEBUG:root:processing https://en.wikipedia.org/wiki/Foxcatcher
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Steve_Carell HTTP/1.1" 200 202558
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Foxcatcher HTTP/1.1" 200 202149
+WARNING:root:Cannot find the box office of Yankee_Doodle_Dandy
+DEBUG:root:processing https://en.wikipedia.org/wiki/Harry_Carey_(actor)
+WARNING:root:Cannot find the box office of The_Godfather
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Harry_Carey_(actor) HTTP/1.1" 200 81596
+DEBUG:root:processing https://en.wikipedia.org/wiki/Mr._Smith_Goes_to_Washington
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Mr._Smith_Goes_to_Washington HTTP/1.1" 200 126271
+DEBUG:root:processing https://en.wikipedia.org/wiki/Lynn_Carlin
+DEBUG:root:processing https://en.wikipedia.org/wiki/Faces_(film)
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Lynn_Carlin HTTP/1.1" 200 46176
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Faces_(film) HTTP/1.1" 200 54314
+DEBUG:root:processing https://en.wikipedia.org/wiki/Art_Carney
+DEBUG:root:processing https://en.wikipedia.org/wiki/Harry_and_Tonto
+DEBUG:root:processing https://en.wikipedia.org/wiki/Leslie_Caron
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Art_Carney HTTP/1.1" 200 157877
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Harry_and_Tonto HTTP/1.1" 200 68830
+DEBUG:root:processing https://en.wikipedia.org/wiki/Lili
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Leslie_Caron HTTP/1.1" 200 142972
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Lili HTTP/1.1" 200 80175
+DEBUG:root:processing https://en.wikipedia.org/wiki/Diahann_Carroll
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Diahann_Carroll HTTP/1.1" 200 128245
+DEBUG:root:processing https://en.wikipedia.org/wiki/Claudine_(film)
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Claudine_(film) HTTP/1.1" 200 65011
+DEBUG:root:processing https://en.wikipedia.org/wiki/Nancy_Carroll
+DEBUG:root:processing https://en.wikipedia.org/wiki/The_Devil%27s_Holiday
+DEBUG:root:processing https://en.wikipedia.org/wiki/Peggy_Cass
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Nancy_Carroll HTTP/1.1" 200 70358
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/The_Devil%27s_Holiday HTTP/1.1" 200 42442
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Peggy_Cass HTTP/1.1" 200 71284
+WARNING:root:Cannot find the box office of Lili
+DEBUG:root:processing https://en.wikipedia.org/wiki/Auntie_Mame_(film)
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Auntie_Mame_(film) HTTP/1.1" 200 80760
+WARNING:root:Cannot find the box office of Claudine_(film)
+DEBUG:root:processing https://en.wikipedia.org/wiki/John_Cassavetes
+DEBUG:root:processing https://en.wikipedia.org/wiki/The_Dirty_Dozen
+DEBUG:root:processing https://en.wikipedia.org/wiki/Seymour_Cassel
+DEBUG:root:processing https://en.wikipedia.org/wiki/Faces_(film)
+DEBUG:root:processing https://en.wikipedia.org/wiki/Richard_S._Castellano
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/John_Cassavetes HTTP/1.1" 200 136211
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/The_Dirty_Dozen HTTP/1.1" 200 121158
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Seymour_Cassel HTTP/1.1" 200 82310
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Faces_(film) HTTP/1.1" 200 54314
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Richard_S._Castellano HTTP/1.1" 200 58052
+DEBUG:root:processing https://en.wikipedia.org/wiki/Lovers_and_Other_Strangers
+DEBUG:root:processing https://en.wikipedia.org/wiki/Keisha_Castle-Hughes
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Lovers_and_Other_Strangers HTTP/1.1" 200 46509
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Keisha_Castle-Hughes HTTP/1.1" 200 96403
+DEBUG:root:processing https://en.wikipedia.org/wiki/Whale_Rider
+WARNING:root:Cannot find the box office of Lovers_and_Other_Strangers
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Whale_Rider HTTP/1.1" 200 97110
+DEBUG:root:processing https://en.wikipedia.org/wiki/George_Chakiris
+DEBUG:root:processing https://en.wikipedia.org/wiki/West_Side_Story_(film)
+DEBUG:root:processing https://en.wikipedia.org/wiki/Timoth%C3%A9e_Chalamet
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/George_Chakiris HTTP/1.1" 200 110563
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Timoth%C3%A9e_Chalamet HTTP/1.1" 200 253968
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/West_Side_Story_(film) HTTP/1.1" 200 243198
+DEBUG:root:processing https://en.wikipedia.org/wiki/Call_Me_by_Your_Name_(film)
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Call_Me_by_Your_Name_(film) HTTP/1.1" 200 620403
+DEBUG:root:processing https://en.wikipedia.org/wiki/Jeff_Chandler
+DEBUG:root:processing https://en.wikipedia.org/wiki/Broken_Arrow_(1950_film)
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Jeff_Chandler HTTP/1.1" 200 177575
+DEBUG:root:processing https://en.wikipedia.org/wiki/Carol_Channing
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Broken_Arrow_(1950_film) HTTP/1.1" 200 70013
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Carol_Channing HTTP/1.1" 200 217347
+DEBUG:root:processing https://en.wikipedia.org/wiki/Thoroughly_Modern_Millie
+DEBUG:root:processing https://en.wikipedia.org/wiki/Stockard_Channing
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Thoroughly_Modern_Millie HTTP/1.1" 200 88111
+DEBUG:root:processing https://en.wikipedia.org/wiki/Six_Degrees_of_Separation_(film)
+DEBUG:root:processing https://en.wikipedia.org/wiki/Charlie_Chaplin
+DEBUG:root:processing https://en.wikipedia.org/wiki/The_Great_Dictator
+DEBUG:root:processing https://en.wikipedia.org/wiki/Jessica_Chastain
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Stockard_Channing HTTP/1.1" 200 179754
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Six_Degrees_of_Separation_(film) HTTP/1.1" 200 57501
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/The_Great_Dictator HTTP/1.1" 200 177325
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Jessica_Chastain HTTP/1.1" 200 479460
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Charlie_Chaplin HTTP/1.1" 200 722012
+DEBUG:root:processing https://en.wikipedia.org/wiki/Zero_Dark_Thirty
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Zero_Dark_Thirty HTTP/1.1" 200 299483
+DEBUG:root:processing https://en.wikipedia.org/wiki/Ruth_Chatterton
+DEBUG:root:processing https://en.wikipedia.org/wiki/Madame_X_(1929_film)
+DEBUG:root:processing https://en.wikipedia.org/wiki/Don_Cheadle
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Ruth_Chatterton HTTP/1.1" 200 101778
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Don_Cheadle HTTP/1.1" 200 186598
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Madame_X_(1929_film) HTTP/1.1" 200 45727
+DEBUG:root:processing https://en.wikipedia.org/wiki/Hotel_Rwanda
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Hotel_Rwanda HTTP/1.1" 200 213689
+DEBUG:root:processing https://en.wikipedia.org/wiki/Michael_Chekhov
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Michael_Chekhov HTTP/1.1" 200 82489
+DEBUG:root:processing https://en.wikipedia.org/wiki/Spellbound_(1945_film)
+DEBUG:root:processing https://en.wikipedia.org/wiki/Cher
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Spellbound_(1945_film) HTTP/1.1" 200 160970
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Cher HTTP/1.1" 200 811833
+DEBUG:root:processing https://en.wikipedia.org/wiki/Moonstruck
+DEBUG:root:processing https://en.wikipedia.org/wiki/Maurice_Chevalier
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Moonstruck HTTP/1.1" 200 95182
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Maurice_Chevalier HTTP/1.1" 200 148284
+DEBUG:root:processing https://en.wikipedia.org/wiki/The_Love_Parade
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/The_Love_Parade HTTP/1.1" 200 61216
+DEBUG:root:processing https://en.wikipedia.org/wiki/Julie_Christie
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Julie_Christie HTTP/1.1" 200 265640
+DEBUG:root:processing https://en.wikipedia.org/wiki/Darling_(1965_film)
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Darling_(1965_film) HTTP/1.1" 200 90558
+DEBUG:root:processing https://en.wikipedia.org/wiki/Thomas_Haden_Church
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Thomas_Haden_Church HTTP/1.1" 200 178397
+DEBUG:root:processing https://en.wikipedia.org/wiki/Sideways
+DEBUG:root:processing https://en.wikipedia.org/wiki/Diane_Cilento
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Sideways HTTP/1.1" 200 197825
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Diane_Cilento HTTP/1.1" 200 83954
+DEBUG:root:processing https://en.wikipedia.org/wiki/Tom_Jones_(1963_film)
+DEBUG:root:processing https://en.wikipedia.org/wiki/Candy_Clark
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Tom_Jones_(1963_film) HTTP/1.1" 200 165978
+WARNING:root:Cannot find the box office of Darling_(1965_film)
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Candy_Clark HTTP/1.1" 200 68843
+DEBUG:root:processing https://en.wikipedia.org/wiki/American_Graffiti
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/American_Graffiti HTTP/1.1" 200 229792
+DEBUG:root:processing https://en.wikipedia.org/wiki/Patricia_Clarkson
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Patricia_Clarkson HTTP/1.1" 200 217806
+DEBUG:root:processing https://en.wikipedia.org/wiki/Pieces_of_April
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Pieces_of_April HTTP/1.1" 200 64706
+DEBUG:root:processing https://en.wikipedia.org/wiki/Jill_Clayburgh
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Jill_Clayburgh HTTP/1.1" 200 150178
+DEBUG:root:processing https://en.wikipedia.org/wiki/An_Unmarried_Woman
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/An_Unmarried_Woman HTTP/1.1" 200 60634
+DEBUG:root:processing https://en.wikipedia.org/wiki/Montgomery_Clift
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Montgomery_Clift HTTP/1.1" 200 136129
+DEBUG:root:processing https://en.wikipedia.org/wiki/The_Search
+DEBUG:root:processing https://en.wikipedia.org/wiki/George_Clooney
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/The_Search HTTP/1.1" 200 65168
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/George_Clooney HTTP/1.1" 200 421667
+WARNING:root:Cannot find the information box of Sideways
+DEBUG:root:processing https://en.wikipedia.org/wiki/Syriana
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Syriana HTTP/1.1" 200 132375
+WARNING:root:Cannot find the box office of An_Unmarried_Woman
+DEBUG:root:processing https://en.wikipedia.org/wiki/Glenn_Close
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Glenn_Close HTTP/1.1" 200 456226
+DEBUG:root:processing https://en.wikipedia.org/wiki/Fatal_Attraction
+DEBUG:root:processing https://en.wikipedia.org/wiki/Lee_J._Cobb
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Lee_J._Cobb HTTP/1.1" 200 91510
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Fatal_Attraction HTTP/1.1" 200 133405
+DEBUG:root:processing https://en.wikipedia.org/wiki/On_the_Waterfront
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/On_the_Waterfront HTTP/1.1" 200 171781
+DEBUG:root:processing https://en.wikipedia.org/wiki/Charles_Coburn
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Charles_Coburn HTTP/1.1" 200 86704
+DEBUG:root:processing https://en.wikipedia.org/wiki/The_More_the_Merrier
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/The_More_the_Merrier HTTP/1.1" 200 75095
+DEBUG:root:processing https://en.wikipedia.org/wiki/James_Coburn
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/James_Coburn HTTP/1.1" 200 175615
+DEBUG:root:processing https://en.wikipedia.org/wiki/Affliction_(1997_film)
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Affliction_(1997_film) HTTP/1.1" 200 74599
+DEBUG:root:processing https://en.wikipedia.org/wiki/James_Coco
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/James_Coco HTTP/1.1" 200 74226
+DEBUG:root:processing https://en.wikipedia.org/wiki/Only_When_I_Laugh_(film)
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Only_When_I_Laugh_(film) HTTP/1.1" 200 60552
+DEBUG:root:processing https://en.wikipedia.org/wiki/Claudette_Colbert
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Claudette_Colbert HTTP/1.1" 200 246046
+DEBUG:root:processing https://en.wikipedia.org/wiki/It_Happened_One_Night
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/It_Happened_One_Night HTTP/1.1" 200 169054
+DEBUG:root:processing https://en.wikipedia.org/wiki/Toni_Collette
+DEBUG:root:processing https://en.wikipedia.org/wiki/The_Sixth_Sense
+DEBUG:root:processing https://en.wikipedia.org/wiki/Patricia_Collinge
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Toni_Collette HTTP/1.1" 200 219841
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/Patricia_Collinge HTTP/1.1" 200 77374
+INFO:root:End Scraping
+DEBUG:urllib3.connectionpool:https://en.wikipedia.org:443 "GET /wiki/The_Sixth_Sense HTTP/1.1" 200 131768
+WARNING:root:Cannot find the box office of Affliction_(1997_film)
+WARNING:root:Cannot find the information box of Only When I Laugh (film)
+WARNING:root:Cannot find the box office of It_Happened_One_Night
