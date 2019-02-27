@@ -24,10 +24,17 @@ class scraper:
         self.g = graph.graph()
 
     def manual_add(self, url):
+        '''
+        manual add url to pool
+        '''
         self.urls.put(url)
         return
 
     def start(self):
+        '''
+        start scraping
+        :return:
+        '''
         threads = []
         stops = []
 
@@ -58,18 +65,24 @@ class scraper:
         print('Times up')
         for s in stops:
              s.set()
-        # for t in threads:
-        #     t.join()
         logging.info('End Scraping')
         print('End Scraping')
         return
 
     def complete_all(self):
+        '''
+        complete the graph object describing the infomation
+        '''
         self.g.complet_gross()
         self.g.build_edge()
         return
 
     def parse(self, name, stop_event):
+        '''
+        parse an url
+        :param name: name of the thread
+        :param stop_event: Event object
+        '''
         http = urllib3.PoolManager()
         while not stop_event.is_set():
             url = self.urls.get()
@@ -104,9 +117,15 @@ class scraper:
         return
 
     def get_wiki_id(self, url):
+        '''
+        get wiki id from url
+        '''
         return url.split('/')[-1]
 
     def parse_movie(self, id, soup):
+        '''
+        parse html of a movie page
+        '''
         with self.threadLock:
             if id in self.g.all_movies:
                 return
@@ -159,6 +178,9 @@ class scraper:
         return
 
     def parse_actor(self, id, name, soup):
+        '''
+        parse html of an actor page
+        '''
         with self.threadLock:
             if id in self.g.all_actors:
                 return
@@ -184,14 +206,13 @@ class scraper:
             self.g.add_actor(this)
             self.actor_count += 1
 
-
-        # links = soup.find_all('a')
-        # for link in links:
-        #     ref = link.get("href")
-        #     if ref is None:
-        #         continue
-        #     if ref.startswith('/wiki/') and 'File' not in ref and 'Award' not in ref:
-        #         refid = self.get_wiki_id(ref)
-        #         if refid != id:
-        #             self.urls.put("https://en.wikipedia.org" + ref)
+        links = soup.find_all('a')
+        for link in links:
+            ref = link.get("href")
+            if ref is None:
+                continue
+            if ref.startswith('/wiki/') and 'File' not in ref and 'Award' not in ref:
+                refid = self.get_wiki_id(ref)
+                if refid != id:
+                    self.urls.put("https://en.wikipedia.org" + ref)
         return

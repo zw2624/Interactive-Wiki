@@ -2,9 +2,11 @@ import json
 from Model.models import actors, films
 from datetime import datetime
 
+'''
+Graph contains all films and actors objects as well as dictionaries of their connection.
+Includes Query Functions
+'''
 class graph:
-
-
 
     def __init__(self):
         self.actor_to_movie = {}
@@ -15,7 +17,12 @@ class graph:
         self.actor_num = 0
 
     def add_edge(self, movie_id, actor_id, w):
-
+        '''
+        add edge for graph
+        :param movie_id:
+        :param actor_id:
+        :param w: weight of the actor
+        '''
         if movie_id not in self.movie_to_actor:
             self.movie_to_actor[movie_id] = [(actor_id, w)]
         else:
@@ -29,20 +36,27 @@ class graph:
         return
 
     def add_movie(self, movie):
+        '''
+        add movie to the graph movie dictionary
+        '''
         if movie.id not in self.all_movies:
             self.all_movies[movie.id] = movie
             self.movie_num = self.movie_num + 1
         return
 
     def add_actor(self, actor):
-        try:
-            self.all_actors[actor.id]
-        except KeyError:
+        '''
+        add actor to the graph movie dictionary
+        '''
+        if actor.id not in self.all_actors:
             self.all_actors[actor.id] = actor
             self.actor_num += 1
         return
 
     def cal_weight(self, movie, actor_id):
+        '''
+        calculate the weight of an actor node in a edge
+        '''
         if actor_id in self.all_actors:
             actor = self.all_actors[actor_id]
             if actor is not None:
@@ -51,6 +65,9 @@ class graph:
             return -1
 
     def complet_gross(self):
+        '''
+        used after scraper ran. add movies to actors
+        '''
         for movie_id in self.all_movies:
             movie = self.all_movies[movie_id]
             for actor_id in movie.actors_id:
@@ -58,6 +75,9 @@ class graph:
                     self.all_actors[actor_id].add_movie(movie)
 
     def build_edge(self):
+        '''
+        build edges based on data
+        '''
         for movie_id in self.all_movies:
             movie = self.all_movies[movie_id]
             for actor_id in movie.actors_id:
