@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="17f4bde8-b37b-45be-8873-50537f751289" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Model/graph.py" beforeDir="false" afterPath="$PROJECT_DIR$/Model/graph.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/test_graph_demo.jl" beforeDir="false" afterPath="$PROJECT_DIR$/Test/test_graph_demo.jl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/actors_demo.jl" beforeDir="false" afterPath="$PROJECT_DIR$/actors_demo.jl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/graph_demo.jl" beforeDir="false" afterPath="$PROJECT_DIR$/graph_demo.jl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/history_info.log" beforeDir="false" afterPath="$PROJECT_DIR$/history_info.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/movies_demo.jl" beforeDir="false" afterPath="$PROJECT_DIR$/movies_demo.jl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scraper.py" beforeDir="false" afterPath="$PROJECT_DIR$/scraper.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,9 +16,9 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/sp19_cs242_assignment2$Unittests_in_modelTest_py.coverage" NAME="Unittests in modelTest.py Coverage Results" MODIFIED="1551225036615" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test" />
-    <SUITE FILE_PATH="coverage/sp19_cs242_assignment2$main.coverage" NAME="main Coverage Results" MODIFIED="1551289866542" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/sp19_cs242_assignment2$Unittests_in_graphTest_py.coverage" NAME="Unittests in graphTest.py Coverage Results" MODIFIED="1551232120130" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test" />
+    <SUITE FILE_PATH="coverage/sp19_cs242_assignment2$Unittests_in_modelTest_py.coverage" NAME="Unittests in modelTest.py Coverage Results" MODIFIED="1551296091831" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test" />
+    <SUITE FILE_PATH="coverage/sp19_cs242_assignment2$main.coverage" NAME="main Coverage Results" MODIFIED="1551294556772" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/sp19_cs242_assignment2$Unittests_in_graphTest_py.coverage" NAME="Unittests in graphTest.py Coverage Results" MODIFIED="1551296084868" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test" />
     <SUITE FILE_PATH="coverage/sp19_cs242_assignment2$Unittests_in_Test.coverage" NAME="Unittests in Test Coverage Results" MODIFIED="1551230221300" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test" />
     <SUITE FILE_PATH="coverage/sp19_cs242_assignment2$Unittests_for_graphTest_graphTest_test_add_movie.coverage" NAME="Unittests for graphTest.graphTest.test_add_movie Coverage Results" MODIFIED="1551223944471" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test" />
     <SUITE FILE_PATH="coverage/sp19_cs242_assignment2$Unittests_for_graphTest_graphTest_test_load.coverage" NAME="Unittests for graphTest.graphTest.test_load Coverage Results" MODIFIED="1551225027443" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test" />
@@ -28,7 +28,7 @@
     <option name="myAddOrReplace" value="1" />
   </component>
   <component name="CoverageViewManager">
-    <option name="myElementSize" value="249" />
+    <option name="myElementSize" value="131" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -49,8 +49,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="6" lean-forward="true" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
+            <state relative-caret-position="60">
+              <caret line="4" column="4" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
               </folding>
@@ -61,10 +61,32 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scraper.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="331">
-              <caret line="53" column="26" lean-forward="true" selection-start-line="53" selection-start-column="26" selection-end-line="53" selection-end-column="26" />
+            <state relative-caret-position="405">
+              <caret line="27" column="14" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
+                <element signature="e#2131#2280#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/history_info.log">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="685">
+              <caret line="932" column="9" selection-start-line="932" selection-start-column="9" selection-end-line="932" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Test/graphTest.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-334">
+              <caret line="48" column="17" selection-start-line="48" selection-start-column="17" selection-end-line="48" selection-end-column="17" />
+              <folding>
+                <element signature="e#0#15#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -73,8 +95,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Model/graph.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
-              <caret line="187" column="24" lean-forward="true" selection-start-line="187" selection-start-column="24" selection-end-line="187" selection-end-column="24" />
+            <state relative-caret-position="-1408">
+              <caret line="62" column="32" selection-start-line="62" selection-start-column="32" selection-end-line="62" selection-end-column="32" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -85,8 +107,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Model/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="355">
-              <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+            <state relative-caret-position="420">
+              <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -129,6 +151,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -150,7 +173,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -176,7 +198,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.main">
+  <component name="RunManager" selected="Python tests.Unittests in modelTest.py">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="sp19-cs242-assignment2" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -276,10 +298,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Unittests in modelTest.py" />
         <item itemvalue="Python tests.Unittests in graphTest.py" />
         <item itemvalue="Python tests.Unittests in Test" />
         <item itemvalue="Python tests.Unittests for graphTest.graphTest.test_get_movie_by_year" />
-        <item itemvalue="Python tests.Unittests in modelTest.py" />
         <item itemvalue="Python tests.Unittests for graphTest.graphTest.test_load" />
       </list>
     </recent_temporary>
@@ -296,23 +318,12 @@
       <updated>1550876310330</updated>
       <workItem from="1550876312686" duration="438000" />
       <workItem from="1550902145367" duration="42644000" />
-      <workItem from="1551206083491" duration="34171000" />
+      <workItem from="1551206083491" duration="35002000" />
+      <workItem from="1551294542636" duration="1584000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_in_graphTest_py - 2019.02.26 at 19h 42m 18s.xml">
-      <configuration name="Unittests in graphTest.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_graphTest_py - 2019.02.26 at 19h 42m 40s.xml">
-      <configuration name="Unittests in graphTest.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_graphTest_py - 2019.02.26 at 19h 42m 54s.xml">
-      <configuration name="Unittests in graphTest.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_graphTest_py - 2019.02.26 at 19h 43m 18s.xml">
-      <configuration name="Unittests in graphTest.py" configurationId="tests" />
-    </history-entry>
     <history-entry file="Unittests_in_graphTest_py - 2019.02.26 at 19h 45m 50s.xml">
       <configuration name="Unittests in graphTest.py" configurationId="tests" />
     </history-entry>
@@ -331,9 +342,21 @@
     <history-entry file="Unittests_in_graphTest_py - 2019.02.26 at 19h 48m 40s.xml">
       <configuration name="Unittests in graphTest.py" configurationId="tests" />
     </history-entry>
+    <history-entry file="Unittests_in_graphTest_py - 2019.02.27 at 13h 00m 14s.xml">
+      <configuration name="Unittests in graphTest.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_modelTest_py - 2019.02.27 at 13h 00m 22s.xml">
+      <configuration name="Unittests in modelTest.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_graphTest_py - 2019.02.27 at 13h 34m 46s.xml">
+      <configuration name="Unittests in graphTest.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_modelTest_py - 2019.02.27 at 13h 34m 52s.xml">
+      <configuration name="Unittests in modelTest.py" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="77253000" />
+    <option name="totallyTimeSpent" value="79668000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -346,13 +369,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="944" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25579977" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25885227" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.24647887" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.24647887" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39906102" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -363,14 +387,14 @@
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.3298122" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.24061033" />
-      <window_info anchor="right" id="Coverage" sideWeight="0.50155765" side_tool="true" visible="true" weight="0.14468865" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="SciView" order="3" />
       <window_info anchor="right" id="R Graphics" order="4" />
       <window_info anchor="right" id="R Packages" order="5" />
-      <window_info anchor="right" id="Database" order="6" sideWeight="0.49844238" visible="true" weight="0.14468865" />
+      <window_info anchor="right" id="Database" order="6" sideWeight="0.4976526" visible="true" weight="0.14468865" />
+      <window_info anchor="right" id="Coverage" order="7" sideWeight="0.5023474" side_tool="true" visible="true" weight="0.14468865" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -384,19 +408,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Test/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Test/__init__.py" />
     <entry file="file://$PROJECT_DIR$/Test/test_data_movie.jl">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Test/modelsTest.pyi">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Test/modelsTest.pyi" />
     <entry file="file://$PROJECT_DIR$/Test/test_data_actor.jl">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -413,25 +429,6 @@
     <entry file="file://$PROJECT_DIR$/movies_demo.jl">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/graph_demo.jl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/actors_demo.jl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Model/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Test/modelTest.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -439,52 +436,74 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Test/graphTest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="32" lean-forward="true" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/history.log">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Model/graph.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="187" column="24" lean-forward="true" selection-start-line="187" selection-start-column="24" selection-end-line="187" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/history_info.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2759">
-          <caret line="9" column="31" lean-forward="true" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="6" lean-forward="true" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
+        <state relative-caret-position="60">
+          <caret line="4" column="4" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Model/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/graph_demo.jl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="13530">
+          <caret line="902" column="21" selection-start-line="902" selection-start-column="21" selection-end-line="902" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/actors_demo.jl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7">
+          <caret line="1" column="156" lean-forward="true" selection-start-line="1" selection-start-column="156" selection-end-line="1" selection-end-column="156" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test/graphTest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-334">
+          <caret line="48" column="17" selection-start-line="48" selection-start-column="17" selection-end-line="48" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/history_info.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="685">
+          <caret line="932" column="9" selection-start-line="932" selection-start-column="9" selection-end-line="932" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Model/graph.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1408">
+          <caret line="62" column="32" selection-start-line="62" selection-start-column="32" selection-end-line="62" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/scraper.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="53" column="26" lean-forward="true" selection-start-line="53" selection-start-column="26" selection-end-line="53" selection-end-column="26" />
+        <state relative-caret-position="405">
+          <caret line="27" column="14" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
+            <element signature="e#2131#2280#0" />
           </folding>
         </state>
       </provider>
