@@ -2,26 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="17f4bde8-b37b-45be-8873-50537f751289" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sp19-cs242-assignment2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sp19-cs242-assignment2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flaskr/actors.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flaskr/app.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flaskr/dp.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flaskr/movies.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/graph.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/graphTest.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/modelTest.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/test_actors_demo.jl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/test_data_actor.jl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/test_data_movie.jl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/test_graph_demo.jl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/test_movies_demo.jl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/actors_demo.jl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/graph_demo.jl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/history.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/history_info.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/movies_demo.jl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scraper.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,7 +16,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/sp19_cs242_assignment2$sp19_cs242_assignment2.coverage" NAME="sp19-cs242-assignment2 Coverage Results" MODIFIED="1551577580780" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/sp19_cs242_assignment2$sp19_cs242_assignment2.coverage" NAME="sp19-cs242-assignment2 Coverage Results" MODIFIED="1551582491431" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/sp19_cs242_assignment2$Unittests_in_modelTest_py.coverage" NAME="Unittests in modelTest.py Coverage Results" MODIFIED="1551296091831" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test" />
     <SUITE FILE_PATH="coverage/sp19_cs242_assignment2$main.coverage" NAME="main Coverage Results" MODIFIED="1551576646974" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/sp19_cs242_assignment2$Unittests_in_graphTest_py.coverage" NAME="Unittests in graphTest.py Coverage Results" MODIFIED="1551296084868" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test" />
@@ -61,11 +47,61 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/flaskr/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
+            <state relative-caret-position="576">
+              <caret line="39" column="8" selection-start-line="39" selection-start-column="8" selection-end-line="39" selection-end-column="8" />
+              <folding>
+                <element signature="e#61#70#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/flaskr/graph.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="386">
+              <caret line="112" column="31" lean-forward="true" selection-start-line="112" selection-start-column="31" selection-end-line="112" selection-end-column="31" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/flaskr/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="630">
+              <caret line="42" column="24" selection-start-line="42" selection-start-column="19" selection-end-line="42" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/flaskr/actors.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
+              <folding>
+                <element signature="e#0#16#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/flaskr/movies.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/flaskr/dp.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" selection-start-line="2" selection-end-line="2" />
             </state>
           </provider>
         </entry>
@@ -76,8 +112,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Stub" />
-        <option value="Python Script" />
         <option value="Flask Main" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -99,12 +135,19 @@
         <option value="$PROJECT_DIR$/webscraper/main.py" />
         <option value="$PROJECT_DIR$/webscraper/scraper.py" />
         <option value="$PROJECT_DIR$/app.py" />
+        <option value="$PROJECT_DIR$/actors.py" />
+        <option value="$PROJECT_DIR$/dp.py" />
+        <option value="$PROJECT_DIR$/flaskr/models.py" />
+        <option value="$PROJECT_DIR$/flaskr/app.py" />
+        <option value="$PROJECT_DIR$/flaskr/movies.py" />
+        <option value="$PROJECT_DIR$/flaskr/graph.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
+    <option name="x" value="277" />
     <option name="y" value="23" />
-    <option name="width" value="1680" />
+    <option name="width" value="1403" />
     <option name="height" value="944" />
   </component>
   <component name="ProjectView">
@@ -120,6 +163,16 @@
               <item name="sp19-cs242-assignment2" type="b2602c69:ProjectViewProjectNode" />
               <item name="sp19-cs242-assignment2" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="sp19-cs242-assignment2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sp19-cs242-assignment2" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sp19-cs242-assignment2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sp19-cs242-assignment2" type="462c0819:PsiDirectoryNode" />
+              <item name="flaskr" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -134,6 +187,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/flaskr" />
       <recent name="$PROJECT_DIR$/Model" />
     </key>
   </component>
@@ -174,12 +228,12 @@
     </configuration>
     <configuration name="sp19-cs242-assignment2" type="Python.FlaskServer" factoryName="Flask server">
       <module name="sp19-cs242-assignment2" />
-      <option name="target" value="$PROJECT_DIR$/app.py" />
+      <option name="target" value="$PROJECT_DIR$/flaskr/app.py" />
       <option name="targetType" value="PATH" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
@@ -217,7 +271,7 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests in Test" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests in /Users/zwang199/Projects/CS 242/sp19-cs242-assignment2/Test" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="sp19-cs242-assignment2" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -232,7 +286,7 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests in graphTest.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests in /Users/zwang199/Projects/CS 242/sp19-cs242-assignment2/Test/graphTest.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="sp19-cs242-assignment2" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -247,7 +301,7 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests in modelTest.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests in /Users/zwang199/Projects/CS 242/sp19-cs242-assignment2/Test/modelTest.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="sp19-cs242-assignment2" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -267,15 +321,15 @@
       <item itemvalue="Python.main" />
       <item itemvalue="Python tests.Unittests for graphTest.graphTest.test_get_movie_by_year" />
       <item itemvalue="Python tests.Unittests for graphTest.graphTest.test_load" />
-      <item itemvalue="Python tests.Unittests in graphTest.py" />
-      <item itemvalue="Python tests.Unittests in modelTest.py" />
-      <item itemvalue="Python tests.Unittests in Test" />
+      <item itemvalue="Python tests.Unittests in /Users/zwang199/Projects/CS 242/sp19-cs242-assignment2/Test/graphTest.py" />
+      <item itemvalue="Python tests.Unittests in /Users/zwang199/Projects/CS 242/sp19-cs242-assignment2/Test/modelTest.py" />
+      <item itemvalue="Python tests.Unittests in /Users/zwang199/Projects/CS 242/sp19-cs242-assignment2/Test" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Unittests in modelTest.py" />
-        <item itemvalue="Python tests.Unittests in graphTest.py" />
-        <item itemvalue="Python tests.Unittests in Test" />
+        <item itemvalue="Python tests.Unittests in /Users/zwang199/Projects/CS 242/sp19-cs242-assignment2/Test/modelTest.py" />
+        <item itemvalue="Python tests.Unittests in /Users/zwang199/Projects/CS 242/sp19-cs242-assignment2/Test/graphTest.py" />
+        <item itemvalue="Python tests.Unittests in /Users/zwang199/Projects/CS 242/sp19-cs242-assignment2/Test" />
         <item itemvalue="Python tests.Unittests for graphTest.graphTest.test_get_movie_by_year" />
         <item itemvalue="Python tests.Unittests for graphTest.graphTest.test_load" />
       </list>
@@ -296,7 +350,7 @@
       <workItem from="1551206083491" duration="35002000" />
       <workItem from="1551294542636" duration="1584000" />
       <workItem from="1551563579834" duration="6924000" />
-      <workItem from="1551577545238" duration="468000" />
+      <workItem from="1551577545238" duration="6553000" />
     </task>
     <servers />
   </component>
@@ -333,7 +387,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="87060000" />
+    <option name="totallyTimeSpent" value="93145000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -345,14 +399,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1680" height="944" extended-state="0" />
+    <frame x="277" y="23" width="1403" height="944" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26495728" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.31888318" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.24647887" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.24647887" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39906102" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -362,14 +417,14 @@
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.3298122" />
-      <window_info anchor="bottom" id="Python Console" order="12" weight="0.24061033" />
+      <window_info active="true" anchor="bottom" id="Python Console" order="12" visible="true" weight="0.24061033" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="SciView" order="3" />
-      <window_info anchor="right" id="R Graphics" order="4" />
+      <window_info anchor="right" id="R Graphics" order="4" visible="true" weight="0.046289492" />
       <window_info anchor="right" id="R Packages" order="5" />
-      <window_info anchor="right" id="Database" order="6" sideWeight="0.4976526" visible="true" weight="0.14468865" />
+      <window_info anchor="right" id="Database" order="6" sideWeight="0.4976526" weight="0.14468865" />
       <window_info anchor="right" id="Coverage" order="7" sideWeight="0.5023474" side_tool="true" visible="true" weight="0.14468865" />
     </layout>
   </component>
@@ -410,10 +465,53 @@
     <entry file="file://$PROJECT_DIR$/Model/models.py" />
     <entry file="file://$PROJECT_DIR$/webscraper/main.py" />
     <entry file="file://$PROJECT_DIR$/webscraper/scraper.py" />
-    <entry file="file://$PROJECT_DIR$/app.py">
+    <entry file="file://$PROJECT_DIR$/flaskr/dp.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        <state relative-caret-position="30">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flaskr/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flaskr/actors.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <element signature="e#0#16#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flaskr/movies.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flaskr/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="39" column="8" selection-start-line="39" selection-start-column="8" selection-end-line="39" selection-end-column="8" />
+          <folding>
+            <element signature="e#61#70#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flaskr/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="42" column="24" selection-start-line="42" selection-start-column="19" selection-end-line="42" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flaskr/graph.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="386">
+          <caret line="112" column="31" lean-forward="true" selection-start-line="112" selection-start-column="31" selection-end-line="112" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
