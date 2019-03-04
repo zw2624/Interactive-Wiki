@@ -1,7 +1,6 @@
 import json
-
-from flaskr.models import actors, films
 from datetime import datetime
+
 
 '''
 Graph contains all films and actors objects as well as dictionaries of their connection.
@@ -14,77 +13,35 @@ class graph:
         self.movie_to_actor = {}
         self.all_movies = {}
         self.all_actors = {}
-        self.movie_num = 0
-        self.actor_num = 0
 
-    def add_edge(self, movie_id, actor_id, w):
-        '''
-        add edge for graph
-        :param movie_id:
-        :param actor_id:
-        :param w: weight of the actor
-        '''
-        if movie_id not in self.movie_to_actor:
-            self.movie_to_actor[movie_id] = [(actor_id, w)]
-        else:
-            self.movie_to_actor[movie_id].append((actor_id, w))
+    def delete_movie(self, movie_name):
+        for k, v in self.all_movies:
+            if v['name'] == movie_name:
+                box = v['box_office']
+                for aid in v['actors']:
+                    try:
+                        actor = self.all_actors[aid]
+                        actor['total_gross'] -= box
+                        actor['movies'].remove(movie_name)
+                    except Exception:
+                        pass
+                del self.all_movies[k]
+                return True
+        return False
 
-        if actor_id not in self.actor_to_movie:
-            self.actor_to_movie[actor_id] = [(movie_id, w)]
-        else:
-            self.actor_to_movie[actor_id].append((movie_id, w))
+    def delete_actor(self, actor_name):
+        for k, v in self.all_actors:
+            if v['name'] == actor_name:
+                for mid in v['movies']:
+                    try:
+                        movie = self.all_movies[mid]
+                        movie['actors'].remove(actor_name)
+                    except Exception:
+                        pass
+                del self.all_actors[k]
+                return True
+        return False
 
-        return
-
-    def add_movie(self, movie):
-        '''
-        add movie to the graph movie dictionary
-        '''
-        if movie.id not in self.all_movies:
-            self.all_movies[movie.id] = movie
-            self.movie_num = self.movie_num + 1
-        return
-
-    def add_actor(self, actor):
-        '''
-        add actor to the graph movie dictionary
-        '''
-        if actor.id not in self.all_actors:
-            self.all_actors[actor.id] = actor
-            self.actor_num += 1
-        return
-
-    def cal_weight(self, movie, actor_id):
-        '''
-        calculate the weight of an actor node in a edge
-        '''
-        if actor_id in self.all_actors:
-            actor = self.all_actors[actor_id]
-            if actor is not None:
-                return actor.total_gross
-        else:
-            return -1
-
-    def complet_gross(self):
-        '''
-        used after scraper ran. add movies to actors
-        '''
-        for movie_id in self.all_movies:
-            movie = self.all_movies[movie_id]
-            for actor_id in movie.actors_id:
-                if actor_id in self.all_actors:
-                    self.all_actors[actor_id].add_movie(movie)
-
-    def build_edge(self):
-        '''
-        build edges based on data
-        '''
-        for movie_id in self.all_movies:
-            movie = self.all_movies[movie_id]
-            for actor_id in movie.actors_id:
-                w = self.cal_weight(movie, actor_id)
-                self.add_edge(movie_id, actor_id, w)
-        return
 
     def load_data(self, data_path):
         '''
@@ -97,6 +54,23 @@ class graph:
         self.all_actors = data[0]
         self.all_movies = data[1]
 
+    def assign_connection(self):
+        for k, v in self.all_actors.items():
+            v['connection'] = {}
+        for k, v in self.all_movies.items():
+            aids = v['actors']
+            for target in aids:
+                try:
+                    actor = self.all_actors[target]
+                    for aid in aids:
+                        if target == aid:
+                            continue
+                        if aid in actor['connection']:
+                            actor['connection'][aid] += 1
+                        else:
+                            actor['connection'][aid] = 1
+                except Exception:
+                    continue
 
 
     def get_movie_gross(self, movie):
@@ -120,16 +94,10 @@ class graph:
         :param year: selected year
         :return: [models.films]
         '''
-        ret = []
-        for movie_id in self.all_movies:
-            movie = self.all_movies[movie_id]
-            if movie.release is not None:
-                try:
-                    dt = datetime.strptime(str(movie.release), '%Y-%m-%d')
-                    if dt.year == year:
-                        ret.append(movie_id)
-                except Exception:
-                    pass
+        ret = {}
+        for k, v in self.all_movies.items():
+            if v['year'] == year:
+                ret[k] = v
         return ret
 
     def get_actor_by_movies(self, movie_id):
@@ -138,7 +106,7 @@ class graph:
         :param actor_name: the name of the movie
         :return: [models.actors]
         '''
-        return self.all_movies[movie_id].actors_id
+        return self.all_movies[movie_id]['actors']
 
     def get_actor_most_gross(self, X):
         '''
@@ -146,13 +114,13 @@ class graph:
         :param X: number of actors to be shown
         :return: [models.actors]
         '''
-        mylist = []
+        import heapq
+        ret = []
         for actor_id in self.all_actors:
             actor = self.all_actors[actor_id]
-            if actor.total_gross is not None:
-                mylist.append((actor_id, int(actor.total_gross)))
-        mylist.sort(key=lambda x: -x[1])
-        return mylist[0:X]
+            heapq.heappush(ret, (actor['total_gross'], actor['name']))
+        ret = heapq.nlargest(X, ret)
+        return ret
 
     def get_actor_oldest(self, X):
         '''
@@ -160,14 +128,13 @@ class graph:
         :param X: number of actors to be shown
         :return: [models.actors]
         '''
-        mylist = []
+        import heapq
+        ret = []
         for actor_id in self.all_actors:
             actor = self.all_actors[actor_id]
-            if actor.birth is not None:
-                dt = datetime.strptime(actor.birth, '%Y-%m-%d')
-                mylist.append((actor_id, dt))
-        mylist.sort(key=lambda x: x[1])
-        return mylist[0:X]
+            heapq.heappush(ret, (actor['age'], actor['name']))
+        ret = heapq.nlargest(X, ret)
+        return ret
 
     def get_actor_by_year(self, year):
         '''
@@ -175,11 +142,8 @@ class graph:
         :param year: selected year
         :return: [models.actors]
         '''
-        ret = []
-        for actor_id in self.all_actors:
-            actor = self.all_actors[actor_id]
-            if actor.birth is not None:
-                dt = datetime.strptime(actor.birth, '%Y-%m-%d')
-                if dt.year == year:
-                    ret.append(actor_id)
+        ret = {}
+        for k, v in self.all_actors.items():
+            if v['age'] == 2019 - year:
+                ret[k] = v
         return ret

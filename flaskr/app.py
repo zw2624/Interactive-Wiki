@@ -4,13 +4,17 @@ Reference: http://flask.pocoo.org/docs/1.0/tutorial/
 import os
 
 from flask import Flask
-from flaskr import actors
+from flaskr import actors, movies, analysis
 from flaskr import graph
+from flask import g
+
+g = graph.graph()
 
 
 root = ""
-data_path = '../data/'
-g = graph.graph()
+data_path = './data/data.json'
+
+# global g
 
 
 def create_app(test_config=None):
@@ -34,10 +38,15 @@ def create_app(test_config=None):
     except OSError:
         pass
 
+    # global g
+    # g = graph.graph()
     global g
-    g.load_json(data_path)
+    g.load_data(data_path)
+    g.assign_connection()
 
     app.register_blueprint(actors.bp)
+    app.register_blueprint(movies.bp)
+    app.register_blueprint(analysis.bp)
 
     # a simple page that says hello
     @app.route('/hello')
