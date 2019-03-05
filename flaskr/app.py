@@ -2,20 +2,15 @@
 Reference: http://flask.pocoo.org/docs/1.0/tutorial/
 '''
 import os
-
-from flask import Flask
+from flask import Flask, render_template
 from flaskr import actors, movies, analysis
 from flaskr import graph
-from flask import g
-
-g = graph.graph()
-
 
 root = ""
 data_path = './data/data.json'
-
-# global g
-
+g = graph.graph()
+g.load_data(data_path)
+g.assign_connection()
 
 def create_app(test_config=None):
     # create and configure the app
@@ -37,20 +32,15 @@ def create_app(test_config=None):
         os.makedirs(app.instance_path)
     except OSError:
         pass
-
-    # global g
-    # g = graph.graph()
-    global g
-    g.load_data(data_path)
-    g.assign_connection()
-
     app.register_blueprint(actors.bp)
     app.register_blueprint(movies.bp)
-    app.register_blueprint(analysis.bp)
+    app.register_blueprint(analysis.bp_connect)
+    app.register_blueprint(analysis.bp_gross)
+    app.register_blueprint(analysis.bp_visual)
 
     # a simple page that says hello
-    @app.route('/hello')
+    @app.route('/')
     def hello():
-        return 'Hello, World!'
+        return render_template('index.html')
 
     return app

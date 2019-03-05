@@ -1,5 +1,6 @@
 import json
 from datetime import datetime
+import networkx
 
 
 '''
@@ -13,6 +14,30 @@ class graph:
         self.movie_to_actor = {}
         self.all_movies = {}
         self.all_actors = {}
+        self.nx = networkx.Graph()
+
+    def add_actor(self, actor):
+        aid = actor['name']
+        self.all_actors[aid] = actor
+        for mid in actor['movies']:
+            if mid in self.all_movies:
+                movie = self.all_movies[mid]
+                if aid not in movie['actors']:
+                    movie['actors'].append(aid)
+            else:
+                movie = {}
+                movie['json_class'] = "Movie"
+                movie['name'] = mid
+                movie["wiki_page"] = ""
+                movie['box_office'] = 0
+                movie['year'] = 0
+                movie['actors'] = [aid]
+                self.all_movies[mid] = movie
+        return
+
+    def add_movie(self, movie):
+        return
+
 
     def delete_movie(self, movie_name):
         for k, v in self.all_movies:
@@ -65,12 +90,26 @@ class graph:
                     for aid in aids:
                         if target == aid:
                             continue
+                        if aid not in self.all_actors:
+                            continue
                         if aid in actor['connection']:
                             actor['connection'][aid] += 1
                         else:
                             actor['connection'][aid] = 1
                 except Exception:
                     continue
+
+    def get_actor_most_connection(self):
+        '''
+        get 5 actors who has most connections
+        '''
+        import heapq
+        ret = []
+        for actor_id in self.all_actors:
+            actor = self.all_actors[actor_id]
+            heapq.heappush(ret, (len(actor['connection']), actor['name']))
+        ret = heapq.nlargest(5, ret)
+        return ret
 
 
     def get_movie_gross(self, movie):
