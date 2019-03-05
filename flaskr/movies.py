@@ -42,7 +42,7 @@ def update_movie(movie_name):
 
 @bp.route('/<movie_name>', methods=['DELETE'])
 def delete_movie(movie_name):
-    global g
+    global gs
     success = g.delete_movie(movie_name)
     if success:
         return "", 201
