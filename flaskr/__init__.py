@@ -2,8 +2,7 @@
 Reference: http://flask.pocoo.org/docs/1.0/tutorial/
 '''
 import os
-from flask import Flask, render_template
-from flaskr import actors, movies, analysis
+from flask import Flask, render_template, session
 from flaskr import graph
 
 root = ""
@@ -12,8 +11,10 @@ g = graph.graph()
 g.load_data(data_path)
 g.assign_connection()
 
+
+from flaskr import actors, movies, analysis
+
 def create_app(test_config=None):
-    # create and configure the app
     app = Flask(__name__, instance_relative_config=True)
     app.config.from_mapping(
         SECRET_KEY='dev',

@@ -107,7 +107,7 @@ class graph:
         ret = []
         for actor_id in self.all_actors:
             actor = self.all_actors[actor_id]
-            heapq.heappush(ret, (len(actor['connection']), actor['name']))
+            heapq.heappush(ret, (sum(actor['connection'].values()), actor['name']))
         ret = heapq.nlargest(5, ret)
         return ret
 

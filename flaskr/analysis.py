@@ -1,16 +1,14 @@
-import flaskr.graph
-import functools
 import json
 import copy
 from bokeh.plotting import figure, show
 from bokeh.models import Plot, Range1d, MultiLine, Circle, HoverTool, TapTool, BoxSelectTool
 from bokeh.models.graphs import from_networkx, NodesAndLinkedEdges, EdgesAndLinkedNodes, NodesOnly
 from bokeh.embed import components
-from flaskr.app import g
+from flaskr import g
 import networkx
 
 from flask import (
-    Blueprint, flash, redirect, render_template, request, session, url_for, jsonify
+    Blueprint,render_template, request
 )
 
 bp_connect = Blueprint('connections', __name__, url_prefix='/connections')
@@ -27,7 +25,6 @@ def connections():
         del ret[aid]['movies']
     text_ret= json.dumps(ret, sort_keys=False, indent=2)
     nx = networkx.Graph()
-    #nx.add_nodes_from([aid for aid in g.all_actors])
     for aid in g.all_actors:
         nx.add_node(aid, actor_name = aid)
 
@@ -41,7 +38,7 @@ def connections():
     p.add_tools(HoverTool(tooltips=[("Name", "@actor_name")]), TapTool(), BoxSelectTool())
 
     graph_renderer = from_networkx(nx, networkx.spring_layout, scale=7, center=(0, 0))
-    print(graph_renderer.node_renderer.data_source.data.keys())
+    #print(graph_renderer.node_renderer.data_source.data.keys())
     graph_renderer.node_renderer.glyph = Circle(size=10, fill_color=Spectral4[0])
     graph_renderer.node_renderer.selection_glyph = Circle(size=10, fill_color=Spectral4[2])
     graph_renderer.node_renderer.hover_glyph = Circle(size=10, fill_color=Spectral4[1])
@@ -62,7 +59,6 @@ bp_gross = Blueprint('gross_analysis', __name__, url_prefix='/gross_analysis')
 
 @bp_gross.route('/')
 def gross_analysis():
-
     feature_name = request.args.get('feature')
     feature_names = ["age", "connection", "movies"]
     if feature_name == None:
@@ -90,7 +86,6 @@ bp_visual = Blueprint('visualization', __name__, url_prefix='/v')
 
 @bp_gross.route('/')
 def gross_visual():
-
     feature_name = request.args.get('feature')
     feature_names = ["age", "connection", "movies"]
     if feature_name == None:
