@@ -18,7 +18,7 @@ def filter():
     ret = list(g.all_actors.values())
     for (ke, va) in request.args.items():
         vals = va.split('|')
-        filter_func = lambda x, k=ke, val=vals : any(int(val) == x[k] for val in vals) if k == 'age' or k == 'total_gross' else any(val in x[k] for val in vals)
+        filter_func = lambda x, k=ke, val=vals : any([int(val) == x[k] for val in vals]) if k == 'age' or k == 'total_gross' else any([val in x[k] for val in vals])
         ret = [x for x in ret if filter_func(x)]
     text_ret = json.dumps(ret, sort_keys=False, indent=2)
     return render_template("show_json.html",text_ret = text_ret)

@@ -7,9 +7,9 @@
 <body>
 <p>GET</p>
 <li>/actors?name=Bruce|Jack</li>
-<li>/movies?name=Shawshank&name=Redemption</li>
+<li>/actors?name=Brcue&naem=Will</li>
 <li>/actors/Bruce_Willis</li>
-<li>/movies/Shawshank_Redemption</li>
+<li>/movies/The_Sixth_Sense</li>
 
 <p> PUT </p>
 <li>curl -i -X PUT -H "Content-Type: application/json" -d ' {"total_gross":500}'http://localhost:5000/actors/Bruce_Willis</li>
@@ -22,7 +22,7 @@
 <li>curl -i -X POST -H "Content-Type: application/json" -d'{"name":"Captain America"}' http://localhost:5000/movies</li>
 
 <p>DELETE</p>
-<li>url -i -X DELETE -H "Content-Type: application/json" http://localhost:5000/actors/Bruce_Willis</li>
+<li>curl -i -X DELETE -H "Content-Type: application/json" http://localhost:5000/actors/Bruce_Willis</li>
 <li>curl -i -X DELETE -H "Content-Type: application/json" http://localhost:5000/movies/Shawshank_Redemption</li>
 
 <p>
