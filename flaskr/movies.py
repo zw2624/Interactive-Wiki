@@ -8,6 +8,11 @@ from flaskr import g
 
 @bp.route('', methods=['GET'])
 def filter_movie():
+    '''
+    Usage: /movies?attr={attr_value}
+    Example: /movies?name=”Shawshank&Redemption”
+    Filters out all actors that don’t have “Shawshank&Redemption” in their name
+    '''
     ret = list(g.all_movies.values())
     args = [(k,v) for (k, v) in request.args.items()]
     for (ke, va) in args:
@@ -20,6 +25,10 @@ def filter_movie():
 
 @bp.route('', methods=['POST'])
 def create_movie():
+    '''
+    Usage: curl -i -X POST -H "Content-Type: application/json" -d'{"name":"Captain America"}' {API URL}/movies
+    Leverage POST requests to ADD content to backend
+    '''
     movie = request.get_json()
     if movie is None or 'name' not in movie:
         abort(400)
@@ -37,6 +46,11 @@ def create_movie():
 
 @bp.route('/<movie_name>', methods=['GET'])
 def get_movie(movie_name):
+    '''
+    Usage: /movies/:{movie_name}
+    Example: /movies/Shawshank_Redemption
+    Returns the first Movie object that has correct name, displays movie attributes and metadata
+    '''
     movie_name = movie_name.replace('_', " ")
     if movie_name in g.all_movies:
         movie = g.all_movies[movie_name]
@@ -46,6 +60,10 @@ def get_movie(movie_name):
 
 @bp.route('/<movie_name>', methods=['PUT'])
 def update_movie(movie_name):
+    '''
+    Usage: curl -i -X PUT -H "Content-Type: application/json" -d ' {"box_office":500}' {API URL}/movies/m_name
+    Leverage PUT requests to update standing content in backend
+    '''
     movie_name = movie_name.replace('_', " ")
     attrs = request.get_json()
     if movie_name not in g.all_movies:
@@ -58,6 +76,10 @@ def update_movie(movie_name):
 
 @bp.route('/<movie_name>', methods=['DELETE'])
 def delete_movie(movie_name):
+    '''
+    Usage: curl -i -X DELETE -H "Content-Type: application/json" {API URL}/movies/m_name
+    Leverage DELETE requests to REMOVE content from backend
+    '''
     movie_name = movie_name.replace('_', " ")
     global g
     success = g.delete_movie(movie_name)

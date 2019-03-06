@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="17f4bde8-b37b-45be-8873-50537f751289" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskr/analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskr/analysis.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskr/graph.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskr/graph.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskr/actors.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskr/actors.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flaskr/movies.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskr/movies.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskr/test_ground.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/api_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/api_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/graph_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/graph_test.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -82,11 +77,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/flaskr/movies.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="206">
-              <caret line="39" column="45" selection-start-line="39" selection-start-column="45" selection-end-line="39" selection-end-column="45" />
+            <state relative-caret-position="1140">
+              <caret line="79" column="88" selection-start-line="79" selection-start-column="88" selection-end-line="79" selection-end-column="88" />
             </state>
           </provider>
         </entry>
@@ -103,13 +98,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/flaskr/actors.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="26" column="18" lean-forward="true" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="18" />
+            <state relative-caret-position="439">
+              <caret line="80" column="94" selection-start-line="80" selection-start-column="94" selection-end-line="80" selection-end-column="94" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/graph_test.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="360">
@@ -124,8 +119,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/flaskr/graph.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1331">
-              <caret line="2" selection-start-line="2" selection-end-line="2" />
+            <state relative-caret-position="240">
+              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -196,17 +191,18 @@
         <option value="$PROJECT_DIR$/data/test_data.json" />
         <option value="$PROJECT_DIR$/tests/conftest.py" />
         <option value="$PROJECT_DIR$/tests/actor_test.py" />
-        <option value="$PROJECT_DIR$/flaskr/actors.py" />
         <option value="$PROJECT_DIR$/flaskr/graph.py" />
         <option value="$PROJECT_DIR$/tests/graph_test.py" />
         <option value="$PROJECT_DIR$/tests/api_test.py" />
-        <option value="$PROJECT_DIR$/flaskr/movies.py" />
         <option value="$PROJECT_DIR$/flaskr/analysis.py" />
+        <option value="$PROJECT_DIR$/flaskr/actors.py" />
+        <option value="$PROJECT_DIR$/flaskr/movies.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="width" value="1680" />
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+    <option name="x" value="842" />
+    <option name="width" value="838" />
     <option name="height" value="1050" />
   </component>
   <component name="ProjectView">
@@ -449,7 +445,7 @@
       <workItem from="1551593962239" duration="16603000" />
       <workItem from="1551734249383" duration="27599000" />
       <workItem from="1551846218555" duration="6210000" />
-      <workItem from="1551854500784" duration="1660000" />
+      <workItem from="1551854500784" duration="2656000" />
     </task>
     <servers />
   </component>
@@ -486,7 +482,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="145258000" />
+    <option name="totallyTimeSpent" value="146254000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -498,10 +494,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
+    <frame x="843" y="0" width="837" height="1050" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2777778" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.57160807" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -524,7 +520,7 @@
       <window_info anchor="right" id="R Graphics" order="4" weight="0.03846154" />
       <window_info anchor="right" id="R Packages" order="5" />
       <window_info anchor="right" id="Database" order="6" sideWeight="0.4976526" weight="0.14468865" />
-      <window_info anchor="right" id="Coverage" order="7" sideWeight="0.5023474" side_tool="true" visible="true" weight="0.14468865" />
+      <window_info active="true" anchor="right" id="Coverage" order="7" sideWeight="0.5023474" side_tool="true" visible="true" weight="0.03773585" />
     </layout>
     <layout-to-restore>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2747253" />
@@ -645,13 +641,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/flaskr/templates/gross.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/api_test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="467">
@@ -659,13 +648,6 @@
           <folding>
             <element signature="e#0#29#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flaskr/movies.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="39" column="45" selection-start-line="39" selection-start-column="45" selection-end-line="39" selection-end-column="45" />
         </state>
       </provider>
     </entry>
@@ -679,13 +661,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/flaskr/actors.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="26" column="18" lean-forward="true" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/flaskr/analysis.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="347">
@@ -693,18 +668,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/flaskr/graph.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1331">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flaskr/templates/gross.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/graph_test.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -713,6 +685,30 @@
           <folding>
             <element signature="e#0#29#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flaskr/graph.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flaskr/actors.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="439">
+          <caret line="80" column="94" selection-start-line="80" selection-start-column="94" selection-end-line="80" selection-end-column="94" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flaskr/movies.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1140">
+          <caret line="79" column="88" selection-start-line="79" selection-start-column="88" selection-end-line="79" selection-end-column="88" />
         </state>
       </provider>
     </entry>
