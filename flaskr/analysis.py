@@ -78,7 +78,7 @@ def gross_analysis():
         try:
             xs.append(len(v[feature_name].keys()))
         except Exception:
-            if feature_name == 'movies':
+            if feature_name == 'movies' or feature_name == 'connection':
                 xs.append(len(v[feature_name]))
             else:
                 xs.append(v[feature_name])
@@ -86,8 +86,20 @@ def gross_analysis():
     p = figure(width=600, height=400)
     p.circle(xs, ys)
     script, div = components(p)
+
+    age_gross = {}
+    if feature_name == "age":
+        for i in range(len(xs)):
+            k = int(xs[i] / 5)
+            key = str(k*5) + " to " + str(k*5+4)
+            if key not in age_gross:
+                age_gross[key] = ys[i]
+            else:
+                age_gross[key] += ys[i]
+    age_json = json.dumps(age_gross, sort_keys=True, indent=2)
     return render_template("gross.html", script=script, div=div,
-                           feature_names=feature_names, current_feature_name=feature_name)
+                           feature_names=feature_names, current_feature_name=feature_name,
+                           age_json = age_json)
 
 bp_visual = Blueprint('visualization', __name__, url_prefix='/visualization')
 
