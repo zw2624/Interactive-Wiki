@@ -1,0 +1,93 @@
+[
+  {
+    "actor1": {
+      "json_class": "Actor",
+      "name": "actor1",
+      "age": 10,
+      "total_gross": 4,
+      "movies": [
+        "movie1",
+        "movie2",
+        "film1"
+      ]
+    },
+    "actor2": {
+      "json_class": "Actor",
+      "name": "actor2",
+      "age": 12,
+      "total_gross": 7,
+      "movies": [
+        "movie2",
+        "movie3",
+        "film2"
+      ]
+    },
+    "actor3": {
+      "json_class": "Actor",
+      "name": "actor2",
+      "age": 20,
+      "total_gross": 6,
+      "movies": [
+        "movie1",
+        "movie3",
+        "film2"
+      ]
+    }
+  },
+  {  "movie1" : {
+      "json_class": "Movie",
+      "name": "movie1",
+      "wiki_page": "link",
+      "box_office": 1,
+      "year": 1997,
+      "actors": [
+        "actor1",
+        "actor3"
+      ]
+    },
+    "movie2" : {
+      "json_class": "Movie",
+      "name": "movie2",
+      "wiki_page": "link",
+      "box_office": 2,
+      "year": 1998,
+      "actors": [
+        "actor1",
+        "actor2"
+      ]
+    },
+    "movie3" : {
+      "json_class": "Movie",
+      "name": "movie3",
+      "wiki_page": "link",
+      "box_office": 3,
+      "year": 2000,
+      "actors": [
+        "actor2",
+        "actor3"
+      ]
+    },
+    "film1" : {
+      "json_class": "Movie",
+      "name": "film1",
+      "wiki_page": "link",
+      "box_office": 1,
+      "year": 2007,
+      "actors": [
+        "actor1"
+      ]
+    },
+    "film2" : {
+      "json_class": "Movie",
+      "name": "film1",
+      "wiki_page": "link",
+      "box_office": 2,
+      "year": 2008,
+      "actors": [
+        "actor2",
+        "actor3"
+      ]
+    }
+  }
+
+]

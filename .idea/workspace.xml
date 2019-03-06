@@ -2,10 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="17f4bde8-b37b-45be-8873-50537f751289" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/flaskr/templates/visualization.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/test_data.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flaskr/templates/show_json.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/api_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/graph_test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskr/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskr/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskr/actors.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskr/actors.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flaskr/analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskr/analysis.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskr/graph.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskr/graph.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flaskr/movies.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskr/movies.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskr/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/flaskr/templates/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,9 +22,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/sp19_cs242_assignment2$sp19_cs242_assignment2.coverage" NAME="sp19-cs242-assignment2 Coverage Results" MODIFIED="1551770561506" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/sp19_cs242_assignment2$actor_test.coverage" NAME="actor_test Coverage Results" MODIFIED="1551852874347" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/sp19_cs242_assignment2$Unittests_in_tests.coverage" NAME="Unittests in tests Coverage Results" MODIFIED="1551846796931" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/sp19_cs242_assignment2$sp19_cs242_assignment2.coverage" NAME="sp19-cs242-assignment2 Coverage Results" MODIFIED="1551847945791" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/sp19_cs242_assignment2$Unittests_in_modelTest_py.coverage" NAME="Unittests in modelTest.py Coverage Results" MODIFIED="1551296091831" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test" />
     <SUITE FILE_PATH="coverage/sp19_cs242_assignment2$main.coverage" NAME="main Coverage Results" MODIFIED="1551576646974" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/sp19_cs242_assignment2$Unittests_in_graph_test_py.coverage" NAME="Unittests in graph_test.py Coverage Results" MODIFIED="1551854421700" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
     <SUITE FILE_PATH="coverage/sp19_cs242_assignment2$Unittests_in_graphTest_py.coverage" NAME="Unittests in graphTest.py Coverage Results" MODIFIED="1551296084868" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test" />
     <SUITE FILE_PATH="coverage/sp19_cs242_assignment2$Unittests_in_Test.coverage" NAME="Unittests in Test Coverage Results" MODIFIED="1551230221300" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Test" />
     <SUITE FILE_PATH="coverage/sp19_cs242_assignment2$test_ground.coverage" NAME="test_ground Coverage Results" MODIFIED="1551599154054" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/flaskr" />
@@ -49,42 +60,29 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data/data.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="326" column="24" selection-start-line="326" selection-start-column="4" selection-end-line="326" selection-end-column="24" />
+            <state relative-caret-position="287">
+              <caret line="14403" selection-start-line="14403" selection-end-line="14415" selection-end-column="7" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/flaskr/graph.py">
+        <entry file="file://$PROJECT_DIR$/data/test_data.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-375">
-              <caret line="96" column="29" lean-forward="true" selection-start-line="96" selection-start-column="29" selection-end-line="96" selection-end-column="29" />
+            <state relative-caret-position="390">
+              <caret line="26" column="20" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/api_test.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="602">
+              <caret line="99" selection-start-line="99" selection-end-line="99" />
               <folding>
-                <element signature="e#0#11#0" expanded="true" />
-                <element signature="e#428#506#0" />
+                <element signature="e#0#29#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/flaskr/test_ground.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-              <folding>
-                <element signature="e#0#19#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/flaskr/actors.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-125">
-              <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -92,50 +90,67 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/flaskr/movies.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="29" selection-start-line="29" selection-end-line="29" />
+            <state relative-caret-position="437">
+              <caret line="55" column="19" lean-forward="true" selection-start-line="55" selection-start-column="19" selection-end-line="55" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/flaskr/actors.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="450">
+              <caret line="35" column="22" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/graph_test.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="497">
+              <caret line="76" lean-forward="true" selection-start-line="76" selection-end-line="76" />
+              <folding>
+                <element signature="e#0#29#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/flaskr/analysis.py">
+        <entry file="file://$PROJECT_DIR$/flaskr/graph.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="347">
-              <caret line="111" column="32" selection-start-line="111" selection-start-column="32" selection-end-line="111" selection-end-column="32" />
+            <state relative-caret-position="558">
+              <caret line="111" column="28" selection-start-line="111" selection-start-column="28" selection-end-line="111" selection-end-column="28" />
               <folding>
-                <element signature="e#1#12#0" expanded="true" />
+                <element signature="e#0#11#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/flaskr/templates/visualization.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="5" lean-forward="true" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/flaskr/templates/connection.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="37" lean-forward="true" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/tests/__init__.py">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/flaskr/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="233">
-              <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
+            <state relative-caret-position="225">
+              <caret line="17" column="36" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="36" />
               <folding>
                 <element signature="e#61#70#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/flaskr/analysis.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1830">
+              <caret line="133" column="51" selection-start-line="133" selection-start-column="51" selection-end-line="133" selection-end-column="51" />
             </state>
           </provider>
         </entry>
@@ -147,8 +162,8 @@
       <list>
         <option value="Python Stub" />
         <option value="Flask Main" />
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -156,6 +171,7 @@
     <findStrings>
       <find>The Verdict</find>
       <find>&quot;Charlotte Rampling&quot;</find>
+      <find>ADaz</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -183,14 +199,20 @@
         <option value="$PROJECT_DIR$/flaskr/templates/regression.html" />
         <option value="$PROJECT_DIR$/flaskr/templates/gross.html" />
         <option value="$PROJECT_DIR$/flaskr/templates/connection.html" />
-        <option value="$PROJECT_DIR$/flaskr/templates/index.html" />
         <option value="$PROJECT_DIR$/flaskr/app.py" />
+        <option value="$PROJECT_DIR$/flaskr/templates/visualization.html" />
         <option value="$PROJECT_DIR$/flaskr/__init__.py" />
-        <option value="$PROJECT_DIR$/flaskr/graph.py" />
+        <option value="$PROJECT_DIR$/flaskr/templates/show_json.html" />
+        <option value="$PROJECT_DIR$/flaskr/templates/index.html" />
+        <option value="$PROJECT_DIR$/flaskr/analysis.py" />
+        <option value="$PROJECT_DIR$/data/test_data.json" />
+        <option value="$PROJECT_DIR$/tests/conftest.py" />
+        <option value="$PROJECT_DIR$/tests/actor_test.py" />
         <option value="$PROJECT_DIR$/flaskr/actors.py" />
         <option value="$PROJECT_DIR$/flaskr/movies.py" />
-        <option value="$PROJECT_DIR$/flaskr/templates/visualization.html" />
-        <option value="$PROJECT_DIR$/flaskr/analysis.py" />
+        <option value="$PROJECT_DIR$/tests/api_test.py" />
+        <option value="$PROJECT_DIR$/tests/graph_test.py" />
+        <option value="$PROJECT_DIR$/flaskr/graph.py" />
       </list>
     </option>
   </component>
@@ -216,6 +238,16 @@
               <item name="sp19-cs242-assignment2" type="462c0819:PsiDirectoryNode" />
               <item name="data" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="sp19-cs242-assignment2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sp19-cs242-assignment2" type="462c0819:PsiDirectoryNode" />
+              <item name="flaskr" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sp19-cs242-assignment2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sp19-cs242-assignment2" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -227,7 +259,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -247,7 +279,29 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Flask server.sp19-cs242-assignment2">
+  <component name="RunManager" selected="Python tests.Unittests in graph_test.py">
+    <configuration name="actor_test" type="PythonConfigurationType" factoryName="Python">
+      <module name="sp19-cs242-assignment2" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/api_test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="sp19-cs242-assignment2" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -307,36 +361,6 @@
       <option name="launchJavascriptDebuger" value="false" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for graphTest.graphTest.test_get_movie_by_year" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="sp19-cs242-assignment2" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Test" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;graphTest.graphTest.test_get_movie_by_year&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Unittests in /Users/zwang199/Projects/CS 242/sp19-cs242-assignment2/Test" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="sp19-cs242-assignment2" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Test" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/Test&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
-    </configuration>
     <configuration name="Unittests in /Users/zwang199/Projects/CS 242/sp19-cs242-assignment2/Test/graphTest.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="sp19-cs242-assignment2" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -367,22 +391,53 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="Unittests in graph_test.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="sp19-cs242-assignment2" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/graph_test.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests in tests" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="sp19-cs242-assignment2" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Flask server.sp19-cs242-assignment2" />
+      <item itemvalue="Python.actor_test" />
       <item itemvalue="Python.main" />
       <item itemvalue="Python.test_ground" />
-      <item itemvalue="Python tests.Unittests for graphTest.graphTest.test_get_movie_by_year" />
+      <item itemvalue="Python tests.Unittests in tests" />
       <item itemvalue="Python tests.Unittests in /Users/zwang199/Projects/CS 242/sp19-cs242-assignment2/Test/graphTest.py" />
       <item itemvalue="Python tests.Unittests in /Users/zwang199/Projects/CS 242/sp19-cs242-assignment2/Test/modelTest.py" />
-      <item itemvalue="Python tests.Unittests in /Users/zwang199/Projects/CS 242/sp19-cs242-assignment2/Test" />
+      <item itemvalue="Python tests.Unittests in graph_test.py" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Unittests in graph_test.py" />
+        <item itemvalue="Python tests.Unittests in tests" />
         <item itemvalue="Python.test_ground" />
         <item itemvalue="Python tests.Unittests in /Users/zwang199/Projects/CS 242/sp19-cs242-assignment2/Test/modelTest.py" />
         <item itemvalue="Python tests.Unittests in /Users/zwang199/Projects/CS 242/sp19-cs242-assignment2/Test/graphTest.py" />
-        <item itemvalue="Python tests.Unittests in /Users/zwang199/Projects/CS 242/sp19-cs242-assignment2/Test" />
-        <item itemvalue="Python tests.Unittests for graphTest.graphTest.test_get_movie_by_year" />
       </list>
     </recent_temporary>
   </component>
@@ -403,44 +458,45 @@
       <workItem from="1551563579834" duration="6924000" />
       <workItem from="1551577545238" duration="6594000" />
       <workItem from="1551593962239" duration="16603000" />
-      <workItem from="1551734249383" duration="17499000" />
+      <workItem from="1551734249383" duration="27599000" />
+      <workItem from="1551846218555" duration="6210000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_in_graphTest_py - 2019.02.26 at 19h 45m 50s.xml">
-      <configuration name="Unittests in graphTest.py" configurationId="tests" />
+    <history-entry file="Unittests_in_graph_test_py - 2019.03.06 at 00h 31m 46s.xml">
+      <configuration name="Unittests in graph_test.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_graphTest_py - 2019.02.26 at 19h 46m 33s.xml">
-      <configuration name="Unittests in graphTest.py" configurationId="tests" />
+    <history-entry file="Unittests_in_graph_test_py - 2019.03.06 at 00h 32m 17s.xml">
+      <configuration name="Unittests in graph_test.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_graphTest_py - 2019.02.26 at 19h 47m 12s.xml">
-      <configuration name="Unittests in graphTest.py" configurationId="tests" />
+    <history-entry file="Unittests_in_graph_test_py - 2019.03.06 at 00h 33m 03s.xml">
+      <configuration name="Unittests in graph_test.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_graphTest_py - 2019.02.26 at 19h 47m 49s.xml">
-      <configuration name="Unittests in graphTest.py" configurationId="tests" />
+    <history-entry file="Unittests_in_graph_test_py - 2019.03.06 at 00h 35m 45s.xml">
+      <configuration name="Unittests in graph_test.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_graphTest_py - 2019.02.26 at 19h 48m 28s.xml">
-      <configuration name="Unittests in graphTest.py" configurationId="tests" />
+    <history-entry file="Unittests_in_graph_test_py - 2019.03.06 at 00h 36m 09s.xml">
+      <configuration name="Unittests in graph_test.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_graphTest_py - 2019.02.26 at 19h 48m 40s.xml">
-      <configuration name="Unittests in graphTest.py" configurationId="tests" />
+    <history-entry file="Unittests_in_graph_test_py - 2019.03.06 at 00h 39m 10s.xml">
+      <configuration name="Unittests in graph_test.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_graphTest_py - 2019.02.27 at 13h 00m 14s.xml">
-      <configuration name="Unittests in graphTest.py" configurationId="tests" />
+    <history-entry file="Unittests_in_graph_test_py - 2019.03.06 at 00h 39m 28s.xml">
+      <configuration name="Unittests in graph_test.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_modelTest_py - 2019.02.27 at 13h 00m 22s.xml">
-      <configuration name="Unittests in modelTest.py" configurationId="tests" />
+    <history-entry file="Unittests_in_graph_test_py - 2019.03.06 at 00h 39m 42s.xml">
+      <configuration name="Unittests in graph_test.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_graphTest_py - 2019.02.27 at 13h 34m 46s.xml">
-      <configuration name="Unittests in graphTest.py" configurationId="tests" />
+    <history-entry file="Unittests_in_graph_test_py - 2019.03.06 at 00h 40m 00s.xml">
+      <configuration name="Unittests in graph_test.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_modelTest_py - 2019.02.27 at 13h 34m 52s.xml">
-      <configuration name="Unittests in modelTest.py" configurationId="tests" />
+    <history-entry file="Unittests_in_graph_test_py - 2019.03.06 at 00h 40m 31s.xml">
+      <configuration name="Unittests in graph_test.py" configurationId="tests" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="127288000" />
+    <option name="totallyTimeSpent" value="143598000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -455,7 +511,33 @@
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2716728" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2747253" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.24591836" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3989796" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3298122" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3298122" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.3298122" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.20918368" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="R Graphics" order="4" weight="0.03846154" />
+      <window_info anchor="right" id="R Packages" order="5" />
+      <window_info anchor="right" id="Database" order="6" sideWeight="0.4976526" weight="0.14468865" />
+      <window_info active="true" anchor="right" id="Coverage" order="7" sideWeight="0.5023474" side_tool="true" visible="true" weight="0.14468865" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2747253" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -479,7 +561,7 @@
       <window_info anchor="right" id="R Packages" order="5" />
       <window_info anchor="right" id="Database" order="6" sideWeight="0.4976526" weight="0.14468865" />
       <window_info anchor="right" id="Coverage" order="7" sideWeight="0.5023474" side_tool="true" visible="true" weight="0.14468865" />
-    </layout>
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -520,58 +602,6 @@
     <entry file="file://$PROJECT_DIR$/webscraper/scraper.py" />
     <entry file="file://$PROJECT_DIR$/flaskr/dp.py" />
     <entry file="file://$PROJECT_DIR$/flaskr/models.py" />
-    <entry file="file://$PROJECT_DIR$/flaskr/templates/gross.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="32" lean-forward="true" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flaskr/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="7" lean-forward="true" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flaskr/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
-          <folding>
-            <element signature="e#61#70#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flaskr/templates/connection.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="37" lean-forward="true" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flaskr/templates/visualization.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="5" lean-forward="true" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flaskr/movies.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flaskr/actors.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-125">
-          <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/flaskr/test_ground.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -582,30 +612,125 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/flaskr/graph.py">
+    <entry file="file://$PROJECT_DIR$/flaskr/templates/show_json.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-375">
-          <caret line="96" column="29" lean-forward="true" selection-start-line="96" selection-start-column="29" selection-end-line="96" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-            <element signature="e#428#506#0" />
-          </folding>
+        <state relative-caret-position="75">
+          <caret line="5" column="7" lean-forward="true" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/data.json">
+    <entry file="file://$PROJECT_DIR$/flaskr/templates/connection.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="326" column="24" selection-start-line="326" selection-start-column="4" selection-end-line="326" selection-end-column="24" />
+        <state relative-caret-position="360">
+          <caret line="24" column="11" selection-start-line="24" selection-start-column="11" selection-end-line="26" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flaskr/templates/visualization.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="5" lean-forward="true" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flaskr/templates/gross.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flaskr/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flaskr/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="17" column="36" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="36" />
+          <folding>
+            <element signature="e#61#70#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/flaskr/analysis.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="111" column="32" selection-start-line="111" selection-start-column="32" selection-end-line="111" selection-end-column="32" />
+        <state relative-caret-position="1830">
+          <caret line="133" column="51" selection-start-line="133" selection-start-column="51" selection-end-line="133" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/conftest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="15" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="28" />
           <folding>
-            <element signature="e#1#12#0" expanded="true" />
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flaskr/movies.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="55" column="19" lean-forward="true" selection-start-line="55" selection-start-column="19" selection-end-line="55" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/data.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="14403" selection-start-line="14403" selection-end-line="14415" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/api_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="602">
+          <caret line="99" selection-start-line="99" selection-end-line="99" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/test_data.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="20" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flaskr/actors.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="35" column="22" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/graph_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="497">
+          <caret line="76" lean-forward="true" selection-start-line="76" selection-end-line="76" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flaskr/graph.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="558">
+          <caret line="111" column="28" selection-start-line="111" selection-start-column="28" selection-end-line="111" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
           </folding>
         </state>
       </provider>

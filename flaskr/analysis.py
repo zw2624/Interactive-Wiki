@@ -13,6 +13,8 @@ from flask import (
 
 bp_connect = Blueprint('connections', __name__, url_prefix='/connections')
 Spectral4 = ['#225ea8', '#41b6c4', '#a1dab4', '#ffffcc']
+orange = '#35B778'
+
 
 @bp_connect.route('/', methods=['GET'])
 def connections():
@@ -85,7 +87,7 @@ bp_visual = Blueprint('visualization', __name__, url_prefix='/visualization')
 
 
 @bp_visual.route('/')
-def gross_visual():
+def visual():
     nx = networkx.Graph()
     color_movie = Spectral4[0]
     color_actor = Spectral4[3]
@@ -96,8 +98,8 @@ def gross_visual():
 
 
     for mid in g.all_movies:
-        if g.all_movies[mid]['actors'] == []:
-            continue
+        # if g.all_movies[mid]['actors'] == []:
+        #     continue
         inf = g.all_movies[mid]['box_office']
         nx.add_node(mid, type = 'Movie', item_name = mid,info = "Box Office: " + str(inf), color = color_movie, size = 15)
 
@@ -108,8 +110,15 @@ def gross_visual():
                 continue
             nx.add_edge(mid, aid)
 
-    p = Plot(plot_width=1200, plot_height=2000,
-                x_range=Range1d(-3, 3), y_range=Range1d(-5, 5))
+    for aid in g.all_actors:
+        for mid in g.all_actors[aid]['movies']:
+            if mid not in g.all_movies:
+                continue
+            nx.add_edge(aid, mid)
+
+
+    p = Plot(plot_width=1200, plot_height=1200,
+                x_range=Range1d(-3, 3), y_range=Range1d(-3, 3))
     p.title.text = "Visualization of the graph"
     p.add_tools(HoverTool(tooltips=[("Name", "@item_name"), ("Info", "@info")]), TapTool(), BoxSelectTool())
 
@@ -119,7 +128,7 @@ def gross_visual():
     graph_renderer.node_renderer.hover_glyph = Circle(size='size', fill_color=Spectral4[1])
 
     graph_renderer.edge_renderer.glyph = MultiLine(line_color="#CCCCCC", line_alpha=0.8, line_width=1)
-    graph_renderer.edge_renderer.selection_glyph = MultiLine(line_color=Spectral4[2], line_width=1)
+    graph_renderer.edge_renderer.selection_glyph = MultiLine(line_color='#440154', line_width=1)
     graph_renderer.edge_renderer.hover_glyph = MultiLine(line_color=Spectral4[1], line_width=1)
 
     graph_renderer.selection_policy = NodesAndLinkedEdges()

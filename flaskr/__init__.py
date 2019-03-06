@@ -6,10 +6,7 @@ from flask import Flask, render_template, session
 from flaskr import graph
 
 root = ""
-data_path = './data/data.json'
 g = graph.graph()
-g.load_data(data_path)
-g.assign_connection()
 
 
 from flaskr import actors, movies, analysis
@@ -18,7 +15,7 @@ def create_app(test_config=None):
     app = Flask(__name__, instance_relative_config=True)
     app.config.from_mapping(
         SECRET_KEY='dev',
-        DATABASE=os.path.join(app.instance_path, 'flaskr.sqlite'),
+        DATA_PATH='./data/data.json'
     )
 
     if test_config is None:
@@ -33,13 +30,17 @@ def create_app(test_config=None):
         os.makedirs(app.instance_path)
     except OSError:
         pass
+
+    global g
+    g.load_data(app.config['DATA_PATH'])
+    g.assign_connection()
+
     app.register_blueprint(actors.bp)
     app.register_blueprint(movies.bp)
     app.register_blueprint(analysis.bp_connect)
     app.register_blueprint(analysis.bp_gross)
     app.register_blueprint(analysis.bp_visual)
 
-    # a simple page that says hello
     @app.route('/')
     def hello():
         return render_template('index.html')

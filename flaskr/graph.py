@@ -17,6 +17,9 @@ class graph:
         self.nx = networkx.Graph()
 
     def add_actor(self, actor):
+        '''
+        add actor into graph
+        '''
         aid = actor['name']
         self.all_actors[aid] = actor
         for mid in actor['movies']:
@@ -36,11 +39,20 @@ class graph:
         return
 
     def add_movie(self, movie):
+        '''
+        add movie into graph
+        '''
+        mid = movie['name']
+        self.all_movies[mid] = movie
         return
 
 
     def delete_movie(self, movie_name):
-        for k, v in self.all_movies:
+        '''
+        Delete the movie in the graph
+        Also modified the actor objects
+        '''
+        for k, v in self.all_movies.items():
             if v['name'] == movie_name:
                 box = v['box_office']
                 for aid in v['actors']:
@@ -55,7 +67,11 @@ class graph:
         return False
 
     def delete_actor(self, actor_name):
-        for k, v in self.all_actors:
+        '''
+        Delete the actor in the graph.
+        Also remove its appearance in movie
+        '''
+        for k, v in self.all_actors.items():
             if v['name'] == actor_name:
                 for mid in v['movies']:
                     try:
@@ -80,6 +96,9 @@ class graph:
         self.all_movies = data[1]
 
     def assign_connection(self):
+        '''
+        add 'connection' attribute into actors
+        '''
         for k, v in self.all_actors.items():
             v['connection'] = {}
         for k, v in self.all_movies.items():
@@ -108,81 +127,5 @@ class graph:
         for actor_id in self.all_actors:
             actor = self.all_actors[actor_id]
             heapq.heappush(ret, (sum(actor['connection'].values()), actor['name']))
-        ret = heapq.nlargest(5, ret)
-        return ret
-
-
-    def get_movie_gross(self, movie):
-        '''
-        Find how much a movie has grossed
-        :return:
-        '''
-        return self.all_movies[movie]['box office']
-
-    def get_movie_by_actor(self, actor):
-        '''
-        List which movies an actor has worked in
-        :param actor_name: the name of the actor
-        :return: [models.films]
-        '''
-        return self.all_actors[actor]['movies']
-
-    def get_movie_by_year(self, year):
-        '''
-        List all the movies for a given year
-        :param year: selected year
-        :return: [models.films]
-        '''
-        ret = {}
-        for k, v in self.all_movies.items():
-            if v['year'] == year:
-                ret[k] = v
-        return ret
-
-    def get_actor_by_movies(self, movie_id):
-        '''
-        List which actors worked in a movie
-        :param actor_name: the name of the movie
-        :return: [models.actors]
-        '''
-        return self.all_movies[movie_id]['actors']
-
-    def get_actor_most_gross(self, X):
-        '''
-        List the top X actors with the most total grossing value
-        :param X: number of actors to be shown
-        :return: [models.actors]
-        '''
-        import heapq
-        ret = []
-        for actor_id in self.all_actors:
-            actor = self.all_actors[actor_id]
-            heapq.heappush(ret, (actor['total_gross'], actor['name']))
-        ret = heapq.nlargest(X, ret)
-        return ret
-
-    def get_actor_oldest(self, X):
-        '''
-        List the oldest X actors
-        :param X: number of actors to be shown
-        :return: [models.actors]
-        '''
-        import heapq
-        ret = []
-        for actor_id in self.all_actors:
-            actor = self.all_actors[actor_id]
-            heapq.heappush(ret, (actor['age'], actor['name']))
-        ret = heapq.nlargest(X, ret)
-        return ret
-
-    def get_actor_by_year(self, year):
-        '''
-        List all the actors for a given year
-        :param year: selected year
-        :return: [models.actors]
-        '''
-        ret = {}
-        for k, v in self.all_actors.items():
-            if v['age'] == 2019 - year:
-                ret[k] = v
+        ret = heapq.nlargest(3, ret)
         return ret
