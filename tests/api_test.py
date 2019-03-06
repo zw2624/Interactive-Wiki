@@ -1,6 +1,8 @@
 from unittest import TestCase
+import unittest
 import json
 from flaskr import *
+from flask import template_rendered
 
 
 test_data_path = '../data/test_data.json'
@@ -12,17 +14,20 @@ class TestAPI(TestCase):
             'DATA_PATH': test_data_path
         })
         self.client = app.test_client()
+        return
 
     def test_filter_actor(self):
         rv = self.client.get('/actors?name=actor1&age=10')
         self.assertTrue('actor1' in str(rv.data))
         self.assertTrue('10' in str(rv.data))
+        return
 
     def test_filter_movie(self):
         rv = self.client.get('/movies?name=movie')
         self.assertTrue('movie1' in str(rv.data))
         self.assertTrue('movie2' in str(rv.data))
         self.assertTrue('movie3' in str(rv.data))
+        return
 
     def test_create_actor(self):
         data = {'name': 'new actor'}
@@ -32,6 +37,7 @@ class TestAPI(TestCase):
         rv = self.client.get('/actors/new_actor')
         self.assertTrue('new actor' in str(rv.data))
         self.assertTrue('-1' in str(rv.data))
+        return
 
     def test_create_movie(self):
         data = {'name': 'new movie'}
@@ -41,6 +47,7 @@ class TestAPI(TestCase):
         rv = self.client.get('/movies/new_movie')
         self.assertTrue('new movie' in str(rv.data))
         self.assertTrue('-1' in str(rv.data))
+        return
 
 
     def test_get_actor(self):
@@ -49,6 +56,7 @@ class TestAPI(TestCase):
         self.assertTrue(201 == rv.status_code)
         rv = self.client.get('/actors/randomName')
         self.assertTrue(404 == rv.status_code)
+        return
 
     def test_get_movie(self):
         rv = self.client.get('/movies/movie1')
@@ -56,6 +64,7 @@ class TestAPI(TestCase):
         self.assertTrue(201 == rv.status_code)
         rv = self.client.get('/movies/randomName')
         self.assertTrue(404 == rv.status_code)
+        return
 
     def test_update_actor(self):
         data = {'name': 'new actor2'}
@@ -68,6 +77,7 @@ class TestAPI(TestCase):
         rv = self.client.get('/actors/new_actor2')
         self.assertTrue('new actor2' in str(rv.data))
         self.assertTrue('12' in str(rv.data))
+        return
 
     def test_update_movie(self):
         data = {'year': 2018}
@@ -79,6 +89,7 @@ class TestAPI(TestCase):
         rv = self.client.get('/movies/movie2')
         self.assertTrue('movie2' in str(rv.data))
         self.assertTrue('2018' in str(rv.data))
+        return
 
     def test_delete_actor(self):
         data = {'name': 'new actor2'}
@@ -88,6 +99,7 @@ class TestAPI(TestCase):
         self.assertTrue(201 == rv.status_code)
         rv = self.client.get('/actors/new_actor2')
         self.assertTrue(404 == rv.status_code)
+        return
 
     def test_delete_movie(self):
         data = {'name': 'new movie2'}
@@ -97,3 +109,23 @@ class TestAPI(TestCase):
         self.assertTrue(201 == rv.status_code)
         rv = self.client.get('/movies/new_movie2')
         self.assertTrue(404 == rv.status_code)
+        return
+
+    def test_connection(self):
+        rv = self.client.get('/connections/')
+        self.assertTrue('Connection' in str(rv.data))
+        return
+
+    def test_gross(self):
+        rv = self.client.get('/gross_analysis/')
+        self.assertTrue('Gross' in str(rv.data))
+        return
+
+    def test_visual(self):
+        rv = self.client.get('/visualization/')
+        self.assertTrue('graph' in str(rv.data))
+        return
+
+
+if __name__ == '__main__':
+    unittest.main()

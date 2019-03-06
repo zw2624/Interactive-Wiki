@@ -38,7 +38,6 @@ def create_movie():
 @bp.route('/<movie_name>', methods=['GET'])
 def get_movie(movie_name):
     movie_name = movie_name.replace('_', " ")
-    print(movie_name)
     if movie_name in g.all_movies:
         movie = g.all_movies[movie_name]
     else:

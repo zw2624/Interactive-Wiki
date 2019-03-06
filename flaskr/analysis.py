@@ -18,10 +18,12 @@ orange = '#35B778'
 
 @bp_connect.route('/', methods=['GET'])
 def connections():
+    '''
+    visualize the connection between actors
+    '''
     tops = g.get_actor_most_connection()
     ret = {}
     for tup in tops:
-        print(tup)
         aid = tup[1]
         ret[aid] = copy.deepcopy(g.all_actors[aid])
         del ret[aid]['connection']
@@ -61,6 +63,10 @@ bp_gross = Blueprint('gross_analysis', __name__, url_prefix='/gross_analysis')
 
 @bp_gross.route('/')
 def gross_analysis():
+    '''
+    Scatter Plots
+    (age, movie numbers, connections) vs total gross
+    '''
     feature_name = request.args.get('feature')
     feature_names = ["age", "connection", "movies"]
     if feature_name == None:
@@ -88,6 +94,9 @@ bp_visual = Blueprint('visualization', __name__, url_prefix='/visualization')
 
 @bp_visual.route('/')
 def visual():
+    '''
+    visualze whole graph
+    '''
     nx = networkx.Graph()
     color_movie = Spectral4[0]
     color_actor = Spectral4[3]
