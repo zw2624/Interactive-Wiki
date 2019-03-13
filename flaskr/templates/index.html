@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CS 242: Assignment2.1 Demo </title>
+</head>
+<body>
+<p>GET</p>
+<li>/actors?name=Bruce|Jack</li>
+<li>/actors?name=Brcue&naem=Will</li>
+<li>/actors/Bruce_Willis</li>
+<li>/movies/The_Sixth_Sense</li>
+
+<p> PUT </p>
+<li>curl -i -X PUT -H "Content-Type: application/json" -d ' {"total_gross":500}'http://localhost:5000/actors/Bruce_Willis</li>
+<li>curl -i -X PUT -H "Content-Type: application/json" -d ' {"box_office":500}' http://localhost:5000/movies/Shawshank_Redemption</li>
+
+
+<p>POST</p>
+
+<li>curl -i -X POST -H "Content-Type: application/json" -d'{"name":"Billy Joe"}' http://localhost:5000/actors</li>
+<li>curl -i -X POST -H "Content-Type: application/json" -d'{"name":"Captain America"}' http://localhost:5000/movies</li>
+
+<p>DELETE</p>
+<li>curl -i -X DELETE -H "Content-Type: application/json" http://localhost:5000/actors/Bruce_Willis</li>
+<li>curl -i -X DELETE -H "Content-Type: application/json" http://localhost:5000/movies/Shawshank_Redemption</li>
+
+<p>
+<a href="http://127.0.0.1:5000/connections/">Connection Analysis</a>
+</p>
+<p>
+    <a href="http://127.0.0.1:5000/gross_analysis/">Gross Analysis</a>
+</p>
+<p>
+    <a href="http://127.0.0.1:5000/visualization/">Visualization</a>
+</p>
+
+</body>
+</html>
